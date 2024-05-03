@@ -1,0 +1,50 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May  3 13:12:53 2024
+| Host         : PC_Vicho_N running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Proyecto_1_sep_Dientes_de_sierra_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Proyecto_1_sep_Dientes_de_sierra_0_0 (xilinx.com:user:Dientes_de_sierra:1.1) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Proyecto_1_sep_Dientes_de_sierra_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'clk'
+
+-Upgrade has added port 'clk_div'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May  3 13:03:36 2024
+| Host         : PC_Vicho_N running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Proyecto_1_sep_Dientes_de_sierra_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Proyecto_1_sep_Dientes_de_sierra_0_0 from xilinx.com:user:Dientes_de_sierra:1.0 (Rev. 2) to xilinx.com:user:Dientes_de_sierra:1.1 (Rev. 3)
+

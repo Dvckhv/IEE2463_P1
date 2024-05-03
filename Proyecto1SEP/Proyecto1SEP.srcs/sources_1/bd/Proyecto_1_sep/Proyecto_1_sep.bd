@@ -1,0 +1,125 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xAFF28DAFDEC6D58C",
+      "device": "xc7z010clg400-1",
+      "name": "Proyecto_1_sep",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "RAM_test_0": "",
+      "ila_0": "",
+      "Sel_frec_0": "",
+      "Dientes_de_sierra_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Proyecto_1_sep_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "sw": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "RAM_test_0": {
+        "vlnv": "xilinx.com:user:RAM_test:1.0",
+        "xci_name": "Proyecto_1_sep_RAM_test_0_0"
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "Proyecto_1_sep_ila_0_0",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
+          },
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "2"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "Sel_frec_0": {
+        "vlnv": "xilinx.com:user:Sel_frec:1.0",
+        "xci_name": "Proyecto_1_sep_Sel_frec_0_0"
+      },
+      "Dientes_de_sierra_0": {
+        "vlnv": "xilinx.com:user:Dientes_de_sierra:1.1",
+        "xci_name": "Proyecto_1_sep_Dientes_de_sierra_0_0"
+      }
+    },
+    "nets": {
+      "RAM_test_0_value": {
+        "ports": [
+          "RAM_test_0/value",
+          "ila_0/probe1"
+        ]
+      },
+      "Dientes_de_sierra_0_address": {
+        "ports": [
+          "Dientes_de_sierra_0/address",
+          "RAM_test_0/address",
+          "ila_0/probe0"
+        ]
+      },
+      "sw_0_1": {
+        "ports": [
+          "sw",
+          "Sel_frec_0/sw"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "Sel_frec_0/clk",
+          "ila_0/clk"
+        ]
+      },
+      "Sel_frec_0_clk_div": {
+        "ports": [
+          "Sel_frec_0/clk_div",
+          "Dientes_de_sierra_0/clk_div",
+          "RAM_test_0/clk"
+        ]
+      }
+    }
+  }
+}
