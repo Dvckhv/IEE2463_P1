@@ -12,10 +12,22 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_
 # IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_ila_0_0/Proyecto_1_sep_ila_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_ila_0_0 || ORIG_REF_NAME==Proyecto_1_sep_ila_0_0} -quiet] -quiet
 
-# IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_Dientes_de_sierra_0_0/Proyecto_1_sep_Dientes_de_sierra_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_Dientes_de_sierra_0_0 || ORIG_REF_NAME==Proyecto_1_sep_Dientes_de_sierra_0_0} -quiet] -quiet
-
 # IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_Sel_frec_0_0/Proyecto_1_sep_Sel_frec_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_Sel_frec_0_0 || ORIG_REF_NAME==Proyecto_1_sep_Sel_frec_0_0} -quiet] -quiet
+
+# IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_vio_0_0/Proyecto_1_sep_vio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_vio_0_0 || ORIG_REF_NAME==Proyecto_1_sep_vio_0_0} -quiet] -quiet
+
+# IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_comp_cuadrada_0_3/Proyecto_1_sep_comp_cuadrada_0_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_comp_cuadrada_0_3 || ORIG_REF_NAME==Proyecto_1_sep_comp_cuadrada_0_3} -quiet] -quiet
+
+# IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_Dientes_de_sierra_0_2/Proyecto_1_sep_Dientes_de_sierra_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_Dientes_de_sierra_0_2 || ORIG_REF_NAME==Proyecto_1_sep_Dientes_de_sierra_0_2} -quiet] -quiet
+
+# IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_Triangular_0_0/Proyecto_1_sep_Triangular_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_Triangular_0_0 || ORIG_REF_NAME==Proyecto_1_sep_Triangular_0_0} -quiet] -quiet
+
+# IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_Sel_funcion_0_0/Proyecto_1_sep_Sel_funcion_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_Sel_funcion_0_0 || ORIG_REF_NAME==Proyecto_1_sep_Sel_funcion_0_0} -quiet] -quiet
 
 # XDC: bd/Proyecto_1_sep/Proyecto_1_sep_ooc.xdc

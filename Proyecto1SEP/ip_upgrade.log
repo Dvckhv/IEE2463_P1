@@ -1,18 +1,18 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri May  3 22:19:35 2024
+| Date         : Sat May  4 18:36:02 2024
 | Host         : PC_Vicho_N running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7z010clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'Proyecto_1_sep_Dientes_de_sierra_0_0'
+Upgrade Log for IP 'Proyecto_1_sep_Sel_funcion_0_0'
 
 1. Summary
 ----------
 
-SUCCESS in the upgrade of Proyecto_1_sep_Dientes_de_sierra_0_0 from xilinx.com:user:Dientes_de_sierra:1.1 (Rev. 4) to xilinx.com:user:Dientes_de_sierra:2.0 (Rev. 6)
+SUCCESS in the upgrade of Proyecto_1_sep_Sel_funcion_0_0 from xilinx.com:user:Sel_funcion:1.3 (Rev. 6) to xilinx.com:user:Sel_funcion:1.4 (Rev. 7)
 
 
 
@@ -22,50 +22,134 @@ SUCCESS in the upgrade of Proyecto_1_sep_Dientes_de_sierra_0_0 from xilinx.com:u
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri May  3 13:12:53 2024
+| Date         : Sat May  4 18:22:55 2024
 | Host         : PC_Vicho_N running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
 | Device       : xc7z010clg400-1
 ------------------------------------------------------------------------------------
 
-Upgrade Log for IP 'Proyecto_1_sep_Dientes_de_sierra_0_0'
+Upgrade Log for IP 'Proyecto_1_sep_Sel_funcion_0_0'
 
 1. Summary
 ----------
 
-CAUTION (success, with warnings) in the upgrade of Proyecto_1_sep_Dientes_de_sierra_0_0 (xilinx.com:user:Dientes_de_sierra:1.1) from (Rev. 3) to (Rev. 4)
+SUCCESS in the upgrade of Proyecto_1_sep_Sel_funcion_0_0 from xilinx.com:user:Sel_funcion:1.2 (Rev. 5) to xilinx.com:user:Sel_funcion:1.3 (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat May  4 17:55:35 2024
+| Host         : PC_Vicho_N running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Proyecto_1_sep_Sel_funcion_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Proyecto_1_sep_Sel_funcion_0_0 from xilinx.com:user:Sel_funcion:1.0 (Rev. 2) to xilinx.com:user:Sel_funcion:1.2 (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat May  4 14:41:57 2024
+| Host         : PC_Vicho_N running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Proyecto_1_sep_Triangular_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Proyecto_1_sep_Triangular_0_0 from xilinx.com:user:Triangular:1.2 (Rev. 4) to xilinx.com:user:Triangular:2.0 (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat May  4 14:24:51 2024
+| Host         : PC_Vicho_N running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Proyecto_1_sep_comp_cuadrada_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Proyecto_1_sep_comp_cuadrada_0_3 from xilinx.com:user:comp_cuadrada:2.0 (Rev. 6) to xilinx.com:user:comp_cuadrada:3.0 (Rev. 7)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat May  4 14:05:55 2024
+| Host         : PC_Vicho_N running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Proyecto_1_sep_comp_cuadrada_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Proyecto_1_sep_comp_cuadrada_0_3 from xilinx.com:user:comp_cuadrada:1.2 (Rev. 5) to xilinx.com:user:comp_cuadrada:2.0 (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat May  4 10:44:06 2024
+| Host         : PC_Vicho_N running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Proyecto_1_sep_Triangular_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Proyecto_1_sep_Triangular_0_0 from xilinx.com:user:Triangular:1.1 (Rev. 3) to xilinx.com:user:Triangular:1.2 (Rev. 4)
 
 After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
 
 2. Connection Warnings
 ----------------------
 
-Detected external port differences while upgrading 'Proyecto_1_sep_Dientes_de_sierra_0_0'. These changes may impact your design.
+Detected external port differences while upgrading 'Proyecto_1_sep_Triangular_0_0'. These changes may impact your design.
 
 
--Upgrade has removed port 'clk'
+-Upgrade has removed port 'triangular'
 
--Upgrade has added port 'clk_div'
+-Upgrade has added port 'triangulada'
 
-
-
-
-
-
-
-Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Fri May  3 13:03:36 2024
-| Host         : PC_Vicho_N running 64-bit major release  (build 9200)
-| Command      : upgrade_ip
-| Device       : xc7z010clg400-1
-------------------------------------------------------------------------------------
-
-Upgrade Log for IP 'Proyecto_1_sep_Dientes_de_sierra_0_0'
-
-1. Summary
-----------
-
-SUCCESS in the upgrade of Proyecto_1_sep_Dientes_de_sierra_0_0 from xilinx.com:user:Dientes_de_sierra:1.0 (Rev. 2) to xilinx.com:user:Dientes_de_sierra:1.1 (Rev. 3)
 

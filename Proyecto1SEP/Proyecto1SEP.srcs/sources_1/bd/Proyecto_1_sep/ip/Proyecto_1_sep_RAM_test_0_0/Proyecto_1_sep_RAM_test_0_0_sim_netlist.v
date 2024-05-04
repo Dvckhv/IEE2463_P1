@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri May  3 22:22:04 2024
+// Date        : Fri May  3 23:59:46 2024
 // Host        : PC_Vicho_N running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {c:/Users/vicen/OneDrive/Escritorio/Septimo
 //               Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_RAM_test_0_0/Proyecto_1_sep_RAM_test_0_0_sim_netlist.v}
@@ -16,44 +16,44 @@
 (* x_core_info = "RAM_test,Vivado 2020.1" *) 
 (* NotValidForBitStream *)
 module Proyecto_1_sep_RAM_test_0_0
-   (clk,
-    address,
-    value);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 5000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0" *) input clk;
-  input [7:0]address;
-  output [7:0]value;
+   (clk_div,
+    sierra,
+    seno);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0" *) input clk_div;
+  input [7:0]sierra;
+  output [7:0]seno;
 
-  wire [7:0]address;
-  wire clk;
-  wire [7:0]value;
+  wire clk_div;
+  wire [7:0]seno;
+  wire [7:0]sierra;
 
   Proyecto_1_sep_RAM_test_0_0_RAM_test U0
-       (.address(address),
-        .clk(clk),
-        .value(value));
+       (.clk_div(clk_div),
+        .seno(seno),
+        .sierra(sierra));
 endmodule
 
 (* ORIG_REF_NAME = "RAM_test" *) 
 module Proyecto_1_sep_RAM_test_0_0_RAM_test
-   (value,
-    clk,
-    address);
-  output [7:0]value;
-  input clk;
-  input [7:0]address;
+   (seno,
+    clk_div,
+    sierra);
+  output [7:0]seno;
+  input clk_div;
+  input [7:0]sierra;
 
-  wire [7:0]address;
-  wire clk;
-  wire [7:0]value;
-  wire [15:8]NLW_value_reg_DOADO_UNCONNECTED;
-  wire [15:0]NLW_value_reg_DOBDO_UNCONNECTED;
-  wire [1:0]NLW_value_reg_DOPADOP_UNCONNECTED;
-  wire [1:0]NLW_value_reg_DOPBDOP_UNCONNECTED;
+  wire clk_div;
+  wire [7:0]seno;
+  wire [7:0]sierra;
+  wire [15:8]NLW_seno_reg_DOADO_UNCONNECTED;
+  wire [15:0]NLW_seno_reg_DOBDO_UNCONNECTED;
+  wire [1:0]NLW_seno_reg_DOPADOP_UNCONNECTED;
+  wire [1:0]NLW_seno_reg_DOPBDOP_UNCONNECTED;
 
   (* \MEM.PORTA.DATA_BIT_LAYOUT  = "p0_d8" *) 
   (* METHODOLOGY_DRC_VIOS = "{SYNTH-6 {cell *THIS*}}" *) 
   (* RTL_RAM_BITS = "2048" *) 
-  (* RTL_RAM_NAME = "U0/value" *) 
+  (* RTL_RAM_NAME = "U0/seno" *) 
   (* RTL_RAM_TYPE = "RAM_SP" *) 
   (* bram_addr_begin = "0" *) 
   (* bram_addr_end = "1023" *) 
@@ -155,19 +155,19 @@ module Proyecto_1_sep_RAM_test_0_0_RAM_test
     .WRITE_MODE_B("WRITE_FIRST"),
     .WRITE_WIDTH_A(18),
     .WRITE_WIDTH_B(0)) 
-    value_reg
-       (.ADDRARDADDR({1'b0,1'b0,address,1'b0,1'b0,1'b0,1'b0}),
+    seno_reg
+       (.ADDRARDADDR({1'b0,1'b0,sierra,1'b0,1'b0,1'b0,1'b0}),
         .ADDRBWRADDR({1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
-        .CLKARDCLK(clk),
+        .CLKARDCLK(clk_div),
         .CLKBWRCLK(1'b0),
         .DIADI({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
         .DIBDI({1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1,1'b1}),
         .DIPADIP({1'b0,1'b0}),
         .DIPBDIP({1'b1,1'b1}),
-        .DOADO({NLW_value_reg_DOADO_UNCONNECTED[15:8],value}),
-        .DOBDO(NLW_value_reg_DOBDO_UNCONNECTED[15:0]),
-        .DOPADOP(NLW_value_reg_DOPADOP_UNCONNECTED[1:0]),
-        .DOPBDOP(NLW_value_reg_DOPBDOP_UNCONNECTED[1:0]),
+        .DOADO({NLW_seno_reg_DOADO_UNCONNECTED[15:8],seno}),
+        .DOBDO(NLW_seno_reg_DOBDO_UNCONNECTED[15:0]),
+        .DOPADOP(NLW_seno_reg_DOPADOP_UNCONNECTED[1:0]),
+        .DOPBDOP(NLW_seno_reg_DOPBDOP_UNCONNECTED[1:0]),
         .ENARDEN(1'b1),
         .ENBWREN(1'b0),
         .REGCEAREGCE(1'b0),
