@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Fri May  3 13:11:30 2024
+-- Date        : Fri May  3 13:11:29 2024
 -- Host        : PC_Vicho_N running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim {c:/Users/vicen/OneDrive/Escritorio/Septimo
---               Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Sel_frec_0_0/Proyecto_1_sep_Sel_frec_0_0_sim_netlist.vhdl}
+-- Command     : write_vhdl -force -mode funcsim -rename_top Proyecto_1_sep_Sel_frec_0_0 -prefix
+--               Proyecto_1_sep_Sel_frec_0_0_ Proyecto_1_sep_Sel_frec_0_0_sim_netlist.vhdl
 -- Design      : Proyecto_1_sep_Sel_frec_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity Proyecto_1_sep_Sel_frec_0_0_Sel_frec is
     sw : in STD_LOGIC_VECTOR ( 3 downto 0 );
     clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of Proyecto_1_sep_Sel_frec_0_0_Sel_frec : entity is "Sel_frec";
 end Proyecto_1_sep_Sel_frec_0_0_Sel_frec;
 
 architecture STRUCTURE of Proyecto_1_sep_Sel_frec_0_0_Sel_frec is

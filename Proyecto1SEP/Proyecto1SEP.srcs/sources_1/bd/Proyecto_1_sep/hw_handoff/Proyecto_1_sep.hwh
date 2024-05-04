@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May  3 14:13:44 2024" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May  3 22:20:31 2024" VIVADOVERSION="2020.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.2" DEVICE="7z010" NAME="Proyecto_1_sep" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -20,7 +20,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="4" FULLNAME="/Dientes_de_sierra_0" HWVERSION="1.1" INSTANCE="Dientes_de_sierra_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Dientes_de_sierra" VLNV="xilinx.com:user:Dientes_de_sierra:1.1">
+    <MODULE COREREVISION="6" FULLNAME="/Dientes_de_sierra_0" HWVERSION="2.0" INSTANCE="Dientes_de_sierra_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Dientes_de_sierra" VLNV="xilinx.com:user:Dientes_de_sierra:2.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="Proyecto_1_sep_Dientes_de_sierra_0_0"/>
@@ -85,8 +85,8 @@
         </PORT>
         <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="Sel_frec_0_clk_div">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Dientes_de_sierra_0" PORT="clk_div"/>
             <CONNECTION INSTANCE="RAM_test_0" PORT="clk"/>
+            <CONNECTION INSTANCE="Dientes_de_sierra_0" PORT="clk_div"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

@@ -82,7 +82,7 @@
         "xci_name": "Proyecto_1_sep_Sel_frec_0_0"
       },
       "Dientes_de_sierra_0": {
-        "vlnv": "xilinx.com:user:Dientes_de_sierra:1.1",
+        "vlnv": "xilinx.com:user:Dientes_de_sierra:2.0",
         "xci_name": "Proyecto_1_sep_Dientes_de_sierra_0_0"
       }
     },
@@ -116,8 +116,8 @@
       "Sel_frec_0_clk_div": {
         "ports": [
           "Sel_frec_0/clk_div",
-          "Dientes_de_sierra_0/clk_div",
-          "RAM_test_0/clk"
+          "RAM_test_0/clk",
+          "Dientes_de_sierra_0/clk_div"
         ]
       }
     }

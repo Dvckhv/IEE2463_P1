@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri May  3 13:11:30 2024
+// Date        : Fri May  3 13:11:29 2024
 // Host        : PC_Vicho_N running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim {c:/Users/vicen/OneDrive/Escritorio/Septimo
-//               Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Sel_frec_0_0/Proyecto_1_sep_Sel_frec_0_0_sim_netlist.v}
+// Command     : write_verilog -force -mode funcsim -rename_top Proyecto_1_sep_Sel_frec_0_0 -prefix
+//               Proyecto_1_sep_Sel_frec_0_0_ Proyecto_1_sep_Sel_frec_0_0_sim_netlist.v
 // Design      : Proyecto_1_sep_Sel_frec_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -33,7 +33,6 @@ module Proyecto_1_sep_Sel_frec_0_0
         .sw(sw));
 endmodule
 
-(* ORIG_REF_NAME = "Sel_frec" *) 
 module Proyecto_1_sep_Sel_frec_0_0_Sel_frec
    (clk_div,
     sw,

@@ -162,7 +162,7 @@ proc create_root_design { parentCell } {
   set sw [ create_bd_port -dir I -from 3 -to 0 sw ]
 
   # Create instance: Dientes_de_sierra_0, and set properties
-  set Dientes_de_sierra_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Dientes_de_sierra:1.1 Dientes_de_sierra_0 ]
+  set Dientes_de_sierra_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Dientes_de_sierra:2.0 Dientes_de_sierra_0 ]
 
   # Create instance: RAM_test_0, and set properties
   set RAM_test_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:RAM_test:1.0 RAM_test_0 ]

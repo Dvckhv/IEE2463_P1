@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:Dientes_de_sierra:1.1
--- IP Revision: 4
+-- IP VLNV: xilinx.com:user:Dientes_de_sierra:2.0
+-- IP Revision: 6
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

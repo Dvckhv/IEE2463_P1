@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri May  3 14:07:28 2024
+// Date        : Fri May  3 14:07:25 2024
 // Host        : PC_Vicho_N running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub {c:/Users/vicen/OneDrive/Escritorio/Septimo
-//               Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_ila_0_0/Proyecto_1_sep_ila_0_0_stub.v}
+// Command     : write_verilog -force -mode synth_stub -rename_top Proyecto_1_sep_ila_0_0 -prefix
+//               Proyecto_1_sep_ila_0_0_ Proyecto_1_sep_ila_0_0_stub.v
 // Design      : Proyecto_1_sep_ila_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
