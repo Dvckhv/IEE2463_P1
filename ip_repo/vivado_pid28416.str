@@ -4,10 +4,10 @@ Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
 SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
 IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
 
-Process ID (PID): 23420
+Process ID (PID): 28416
 License: Customer
 
-Current time: 	Tue May 07 10:17:33 CLST 2024
+Current time: 	Tue May 07 10:20:21 CLST 2024
 Time zone: 	Chile Standard Time (America/Santiago)
 
 OS: Windows 10
@@ -45,7 +45,7 @@ Vivado layouts directory: C:/Users/Pato/AppData/Roaming/Xilinx/Vivado/2020.1/dat
 PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
 Vivado log file location: 	C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/ip_repo/vivado.log
 Vivado journal file location: 	C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/ip_repo/vivado.jou
-Engine tmp dir: 	C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/ip_repo/.Xil/Vivado-23420-LAPTOP-H1BP50B7
+Engine tmp dir: 	C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/ip_repo/.Xil/Vivado-28416-LAPTOP-H1BP50B7
 
 Xilinx Environment Variables
 ----------------------------
@@ -58,43 +58,23 @@ XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
 XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
 
 
-GUI allocated memory:	154 MB
+GUI allocated memory:	198 MB
 GUI max memory:		3,072 MB
-Engine allocated memory: 1,034 MB
+Engine allocated memory: 1,045 MB
 
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 */
 
 // TclEventType: START_GUI
-// WARNING: HEventQueue.dispatchEvent() is taking  1506 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1071 ms.
 // Tcl Message: start_gui 
 // TclEventType: PROJECT_OPEN_DIALOG
-// HOptionPane Error: 'Can't open project 'edit_RAM_SENO_v1_0'. Please verify that the project still exists. (Open Project)'
-// Tcl Command: 'rdi::info_commands {device::*}'
-// Tcl Command: 'rdi::info_commands {debug::*}'
-// Tcl Command: 'rdi::info_commands {*}'
-// HMemoryUtils.trashcanNow. Engine heap size: 1,034 MB. GUI used memory: 73 MB. Current time: 5/7/24, 10:17:35 AM CLST
-// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1010 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
-selectButton("OptionPane.button", "OK"); // JButton (v, B)
-// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1004 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
-// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
-// Elapsed time: 112 seconds
-selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto1SEP/Proyecto1SEP.xpr", 1); // r (J, cs)
-// Opening Vivado Project: C:/Users/Pato/Desktop/Universida/2024-1/SEP/ip_repo/edit_RAM_SENO_v1_0.xpr. Version: Vivado v2020.1 
 // bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Pato\Desktop\Universida\2024-1\SEP\IEE2463_P1\ip_repo\edit_RAM_SENO_v1_0.xpr. Version: Vivado v2020.1 
 // TclEventType: DEBUG_PROBE_SET_CHANGE
-// Tcl Message: open_project C:/Users/Pato/Desktop/Universida/2024-1/SEP/ip_repo/edit_RAM_SENO_v1_0.xpr 
+// Tcl Message: open_project C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/ip_repo/edit_RAM_SENO_v1_0.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,045 MB. GUI used memory: 65 MB. Current time: 5/7/24, 10:20:22 AM CLST
 // TclEventType: MSGMGR_MOVEMSG
 // TclEventType: FILE_SET_NEW
 // TclEventType: RUN_CURRENT
@@ -112,16 +92,15 @@ selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "C:/User
 // TclEventType: PROJECT_DASHBOARD_GADGET_NEW
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
 // TclEventType: PROJECT_NEW
-// Tcl Message: open_project C:/Users/Pato/Desktop/Universida/2024-1/SEP/ip_repo/edit_RAM_SENO_v1_0.xpr 
+// Tcl Message: open_project C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/ip_repo/edit_RAM_SENO_v1_0.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Pato/Desktop/Universida/2024-1/SEP/ip_repo' since last save. 
 // Tcl Message: Scanning sources... Finished scanning sources 
-// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Pato/Desktop/Universida/2024-1/SEP/ip_repo/RAM_SENO_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/ip_repo/RAM_SENO_1.0'. 
 // TclEventType: PROJECT_NEW
-// [GUI Memory]: 123 MB (+126887kb) [00:03:11]
-// [Engine Memory]: 1,034 MB (+932841kb) [00:03:11]
-// [GUI Memory]: 136 MB (+6614kb) [00:03:11]
-// WARNING: HEventQueue.dispatchEvent() is taking  5905 ms.
+// [GUI Memory]: 78 MB (+78907kb) [00:00:21]
+// [Engine Memory]: 1,045 MB (+944589kb) [00:00:21]
+// [GUI Memory]: 90 MB (+9013kb) [00:00:21]
+// [GUI Memory]: 114 MB (+19888kb) [00:00:22]
+// [GUI Memory]: 121 MB (+1428kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  4998 ms.
 // Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
-// Project name: edit_RAM_SENO_v1_0; location: C:/Users/Pato/Desktop/Universida/2024-1/SEP/ip_repo; part: xc7z010clg400-1
-// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:18 . Memory (MB): peak = 1058.848 ; gain = 0.000 
-// Elapsed time: 19 seconds
-dismissDialog("Open Project"); // bz (cs)
