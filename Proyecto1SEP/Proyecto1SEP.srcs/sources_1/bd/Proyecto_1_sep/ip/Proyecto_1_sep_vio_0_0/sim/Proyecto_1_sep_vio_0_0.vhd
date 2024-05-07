@@ -55,7 +55,8 @@ PORT (
 CLK : IN STD_LOGIC;
 
 probe_out0 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000000";
-probe_out1 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0) := "0" 
+probe_out1 : OUT STD_LOGIC_VECTOR(0 DOWNTO 0) := "0" ;
+probe_out2 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000000" 
 );
 END Proyecto_1_sep_vio_0_0;
 ARCHITECTURE Proyecto_1_sep_vio_0_0_arch OF Proyecto_1_sep_vio_0_0 IS

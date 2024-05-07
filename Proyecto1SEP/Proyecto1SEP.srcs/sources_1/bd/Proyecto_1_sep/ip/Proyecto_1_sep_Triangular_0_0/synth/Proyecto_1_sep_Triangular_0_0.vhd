@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:Triangular:2.0
--- IP Revision: 5
+-- IP VLNV: xilinx.com:user:Triangular:2.2
+-- IP Revision: 7
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -76,7 +76,7 @@ ARCHITECTURE Proyecto_1_sep_Triangular_0_0_arch OF Proyecto_1_sep_Triangular_0_0
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF Proyecto_1_sep_Triangular_0_0_arch : ARCHITECTURE IS "Proyecto_1_sep_Triangular_0_0,Triangular,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF Proyecto_1_sep_Triangular_0_0_arch: ARCHITECTURE IS "Proyecto_1_sep_Triangular_0_0,Triangular,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Triangular,x_ipVersion=2.0,x_ipCoreRevision=5,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
+  ATTRIBUTE CORE_GENERATION_INFO OF Proyecto_1_sep_Triangular_0_0_arch: ARCHITECTURE IS "Proyecto_1_sep_Triangular_0_0,Triangular,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Triangular,x_ipVersion=2.2,x_ipCoreRevision=7,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF Proyecto_1_sep_Triangular_0_0_arch: ARCHITECTURE IS "package_project";
 BEGIN

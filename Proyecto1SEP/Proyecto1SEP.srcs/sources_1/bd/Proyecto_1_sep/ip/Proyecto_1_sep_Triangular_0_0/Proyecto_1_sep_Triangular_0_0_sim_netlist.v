@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Sat May  4 14:44:07 2024
+// Date        : Sat May  4 19:21:51 2024
 // Host        : PC_Vicho_N running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim {c:/Users/vicen/OneDrive/Escritorio/Septimo
 //               Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Triangular_0_0/Proyecto_1_sep_Triangular_0_0_sim_netlist.v}
@@ -26,10 +26,10 @@ module Proyecto_1_sep_Triangular_0_0
   wire \<const0> ;
   wire clk_div;
   wire [7:0]sierra;
-  wire [6:0]\^triangulada ;
+  wire [7:1]\^triangulada ;
 
-  assign triangulada[7] = \<const0> ;
-  assign triangulada[6:0] = \^triangulada [6:0];
+  assign triangulada[7:1] = \^triangulada [7:1];
+  assign triangulada[0] = \<const0> ;
   GND GND
        (.G(\<const0> ));
   Proyecto_1_sep_Triangular_0_0_Triangular U0

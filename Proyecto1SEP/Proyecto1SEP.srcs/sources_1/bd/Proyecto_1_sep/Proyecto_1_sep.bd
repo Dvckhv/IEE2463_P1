@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2F5FFE3B3DE2ADC9",
+      "boundary_crc": "0x964C2DD6C5ED03B5",
       "device": "xc7z010clg400-1",
       "name": "Proyecto_1_sep",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -16,8 +16,10 @@
       "vio_0": "",
       "Dientes_de_sierra_0": "",
       "comp_cuadrada_0": "",
+      "Sel_funcion_0": "",
       "Triangular_0": "",
-      "Sel_funcion_0": ""
+      "vio_1": "",
+      "Math_0": ""
     },
     "ports": {
       "clk": {
@@ -46,12 +48,12 @@
           }
         }
       },
-      "sw": {
+      "btn": {
         "direction": "I",
         "left": "3",
         "right": "0"
       },
-      "btn": {
+      "sel": {
         "direction": "I",
         "left": "3",
         "right": "0"
@@ -72,7 +74,7 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "6"
+            "value": "7"
           },
           "C_PROBE0_WIDTH": {
             "value": "8"
@@ -91,6 +93,9 @@
           },
           "C_PROBE5_WIDTH": {
             "value": "8"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "9"
           }
         }
       },
@@ -110,9 +115,12 @@
             "value": "0"
           },
           "C_NUM_PROBE_OUT": {
-            "value": "2"
+            "value": "3"
           },
           "C_PROBE_OUT0_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE_OUT2_WIDTH": {
             "value": "8"
           }
         }
@@ -125,28 +133,39 @@
         "vlnv": "xilinx.com:user:comp_cuadrada:3.0",
         "xci_name": "Proyecto_1_sep_comp_cuadrada_0_3"
       },
-      "Triangular_0": {
-        "vlnv": "xilinx.com:user:Triangular:2.0",
-        "xci_name": "Proyecto_1_sep_Triangular_0_0"
-      },
       "Sel_funcion_0": {
         "vlnv": "xilinx.com:user:Sel_funcion:1.4",
         "xci_name": "Proyecto_1_sep_Sel_funcion_0_0"
+      },
+      "Triangular_0": {
+        "vlnv": "xilinx.com:user:Triangular:2.2",
+        "xci_name": "Proyecto_1_sep_Triangular_0_0"
+      },
+      "vio_1": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "Proyecto_1_sep_vio_1_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "Math_0": {
+        "vlnv": "xilinx.com:user:Math:1.3",
+        "xci_name": "Proyecto_1_sep_Math_0_0"
       }
     },
     "nets": {
-      "sw_0_1": {
-        "ports": [
-          "sw",
-          "Sel_frec_0/sw"
-        ]
-      },
       "clk_1": {
         "ports": [
           "clk",
           "Sel_frec_0/clk",
           "ila_0/clk",
-          "vio_0/clk"
+          "vio_0/clk",
+          "vio_1/clk"
         ]
       },
       "Sel_frec_0_clk_div": {
@@ -155,8 +174,9 @@
           "RAM_test_0/clk_div",
           "Dientes_de_sierra_0/clk_div",
           "comp_cuadrada_0/clk_div",
+          "Sel_funcion_0/clk_div",
           "Triangular_0/clk_div",
-          "Sel_funcion_0/clk_div"
+          "Math_0/clk_div"
         ]
       },
       "vio_0_probe_out0": {
@@ -178,8 +198,8 @@
           "ila_0/probe3",
           "RAM_test_0/sierra",
           "comp_cuadrada_0/sierra",
-          "Triangular_0/sierra",
-          "Sel_funcion_0/sierra"
+          "Sel_funcion_0/sierra",
+          "Triangular_0/sierra"
         ]
       },
       "RAM_test_0_seno": {
@@ -199,13 +219,15 @@
       "Sel_funcion_0_funcion_a": {
         "ports": [
           "Sel_funcion_0/funcion_a",
-          "ila_0/probe4"
+          "ila_0/probe4",
+          "Math_0/funcion_a"
         ]
       },
       "Sel_funcion_0_funcion_b": {
         "ports": [
           "Sel_funcion_0/funcion_b",
-          "ila_0/probe5"
+          "ila_0/probe5",
+          "Math_0/funcion_b"
         ]
       },
       "btn_0_1": {
@@ -218,6 +240,30 @@
         "ports": [
           "vio_0/probe_out1",
           "Sel_funcion_0/reset"
+        ]
+      },
+      "vio_1_probe_out0": {
+        "ports": [
+          "vio_1/probe_out0",
+          "Sel_frec_0/sw"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "Math_0/cte"
+        ]
+      },
+      "sel_0_1": {
+        "ports": [
+          "sel",
+          "Math_0/sel"
+        ]
+      },
+      "Math_0_f_out": {
+        "ports": [
+          "Math_0/f_out",
+          "ila_0/probe6"
         ]
       }
     }

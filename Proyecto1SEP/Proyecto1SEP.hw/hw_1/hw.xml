@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xc7z010_1" gui_info="dashboard1=dashboard_1[xc7z010_1/hw_vio_1=VIO_PROBES_1;],dashboard2=hw_ila_1[xc7z010_1/hw_ila_1/Settings=ILA_SETTINGS_1;xc7z010_1/hw_ila_1/Status=ILA_STATUS_1;xc7z010_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z010_1/hw_ila_1/Waveform=ILA_WAVE_1;xc7z010_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;]"/>
+  <device name="xc7z010_1" gui_info="dashboard1=dashboard_1[xc7z010_1/hw_vio_1=VIO_PROBES_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7z010_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/Proyecto_1_sep_wrapper.ltx"/>
@@ -26,6 +26,11 @@
     <Object name="Proyecto_1_sep_i/RAM_test_0_value[7:0]" gui_info=""/>
     <Object name="Proyecto_1_sep_i/vio_0_probe_out0[7:0]" gui_info="dashboard_1/hw_vio_1=0"/>
     <Object name="Proyecto_1_sep_i/vio_0_probe_out1" gui_info="dashboard_1/hw_vio_1=1"/>
+    <Object name="Proyecto_1_sep_i/vio_0_probe_out2[7:0]" gui_info="dashboard_1/hw_vio_1=2"/>
+    <Object name="Proyecto_1_sep_i/vio_1_probe_out0[3:0]" gui_info="dashboard_1/hw_vio_2=0"/>
+  </ObjectList>
+  <ObjectList object_type="hw_vio" gui_info="">
+    <Object name="hw_vio_2" gui_info="dashboard_1/hw_vio_2/TablePreference=5	659	Name	0	2147483647	15	324	324	Value	1	2147483647	15	124	124	Activity	2	2147483647	15	60	60	Direction	3	2147483647	15	72	72	VIO	4	2147483647	15	79	79			1	6	1	Name	Value	Activity	Direction	VIO"/>
   </ObjectList>
   <probeset name="hw project" active="false">
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -82,6 +87,63 @@
         <net name="Proyecto_1_sep_i/Dientes_de_sierra_0_sierra[2]"/>
         <net name="Proyecto_1_sep_i/Dientes_de_sierra_0_sierra[1]"/>
         <net name="Proyecto_1_sep_i/Dientes_de_sierra_0_sierra[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[7:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq8&apos;hXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Analog"/>
+      </probeOptions>
+      <nets>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[7]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[6]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[5]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[4]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[3]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[2]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[1]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+        <Option Id="COMPARE_VALUE.0" value="eq9&apos;hXXX"/>
+        <Option Id="DISPLAY_AS_ENUM" value="1"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_ILA" value="hw_ila_1"/>
+        <Option Id="LINK_TO_WAVEFORM" value="1"/>
+        <Option Id="MAP" value="probe6[8:0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+        <Option Id="TRIGGER_COMPARE_VALUE" value="eq9&apos;hXXX"/>
+        <Option Id="WAVEFORM_STYLE" value="Analog"/>
+      </probeOptions>
+      <nets>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[8]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[7]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[6]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[5]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[4]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[3]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[2]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[1]"/>
+        <net name="Proyecto_1_sep_i/Math_0_f_out[0]"/>
       </nets>
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
@@ -195,7 +257,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
-        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
@@ -223,7 +285,7 @@
         <Option Id="COMPARE_VALUE.0" value="eq8&apos;hXX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>
-        <Option Id="DISPLAY_RADIX" value="HEX"/>
+        <Option Id="DISPLAY_RADIX" value="UNSIGNED"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
@@ -325,7 +387,7 @@
     </probe>
     <probe type="vio_output" busType="net" source="netlist" spec="VIO_OUTPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_HINT" value="OutputDisplay:Toggle;"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="NAME.CUSTOM" value=""/>
@@ -336,6 +398,46 @@
       </probeOptions>
       <nets>
         <net name="Proyecto_1_sep_i/vio_0_probe_out1"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="00000010"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="Proyecto_1_sep_i/vio_0_probe_out2[7]"/>
+        <net name="Proyecto_1_sep_i/vio_0_probe_out2[6]"/>
+        <net name="Proyecto_1_sep_i/vio_0_probe_out2[5]"/>
+        <net name="Proyecto_1_sep_i/vio_0_probe_out2[4]"/>
+        <net name="Proyecto_1_sep_i/vio_0_probe_out2[3]"/>
+        <net name="Proyecto_1_sep_i/vio_0_probe_out2[2]"/>
+        <net name="Proyecto_1_sep_i/vio_0_probe_out2[1]"/>
+        <net name="Proyecto_1_sep_i/vio_0_probe_out2[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_2"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="OUTPUT_VALUE" value="0001"/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="Proyecto_1_sep_i/vio_1_probe_out0[3]"/>
+        <net name="Proyecto_1_sep_i/vio_1_probe_out0[2]"/>
+        <net name="Proyecto_1_sep_i/vio_1_probe_out0[1]"/>
+        <net name="Proyecto_1_sep_i/vio_1_probe_out0[0]"/>
       </nets>
     </probe>
   </probeset>

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date             : Sat May  4 18:41:14 2024
+| Date             : Mon May  6 21:41:31 2024
 | Host             : PC_Vicho_N running 64-bit major release  (build 9200)
 | Command          : report_power -file Proyecto_1_sep_wrapper_power_routed.rpt -pb Proyecto_1_sep_wrapper_power_summary_routed.pb -rpx Proyecto_1_sep_wrapper_power_routed.rpx
 | Design           : Proyecto_1_sep_wrapper
@@ -52,18 +52,18 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |     4629 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1286 |     17600 |            7.31 |
-|   Register               |    <0.001 |     2528 |     35200 |            7.18 |
-|   LUT as Shift Register  |    <0.001 |      109 |      6000 |            1.82 |
-|   CARRY4                 |    <0.001 |       45 |      4400 |            1.02 |
+| Clocks                   |     0.001 |        3 |       --- |             --- |
+| Slice Logic              |    <0.001 |     5410 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     1589 |     17600 |            9.03 |
+|   Register               |    <0.001 |     2888 |     35200 |            8.20 |
+|   LUT as Shift Register  |    <0.001 |      123 |      6000 |            2.05 |
+|   CARRY4                 |    <0.001 |       69 |      4400 |            1.57 |
 |   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
+|   F7/F8 Muxes            |    <0.001 |       12 |     17600 |            0.07 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
-|   F7/F8 Muxes            |    <0.001 |        7 |     17600 |            0.04 |
-|   Others                 |     0.000 |      291 |       --- |             --- |
-| Signals                  |    <0.001 |     3395 |       --- |             --- |
-| Block RAM                |    <0.001 |        6 |        60 |           10.00 |
+|   Others                 |     0.000 |      317 |       --- |             --- |
+| Signals                  |     0.001 |     4031 |       --- |             --- |
+| Block RAM                |    <0.001 |        7 |        60 |           11.67 |
 | I/O                      |    <0.001 |        9 |       100 |            9.00 |
 | Static Power             |     0.090 |          |           |                 |
 | Total                    |     0.093 |          |           |                 |
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.006 |       0.003 |      0.004 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.007 |       0.003 |      0.004 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.005 |       0.000 |      0.005 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -153,10 +153,10 @@ Table of Contents
 | Name                     | Power (W) |
 +--------------------------+-----------+
 | Proyecto_1_sep_wrapper   |     0.003 |
-|   Proyecto_1_sep_i       |     0.001 |
-|   dbg_hub                |     0.001 |
-|     inst                 |     0.001 |
-|       BSCANID.u_xsdbm_id |     0.001 |
+|   Proyecto_1_sep_i       |     0.002 |
+|   dbg_hub                |     0.002 |
+|     inst                 |     0.002 |
+|       BSCANID.u_xsdbm_id |     0.002 |
 +--------------------------+-----------+
 
 

@@ -160,10 +160,13 @@ proc create_root_design { parentCell } {
   # Create ports
   set btn [ create_bd_port -dir I -from 3 -to 0 btn ]
   set clk [ create_bd_port -dir I -type clk clk ]
-  set sw [ create_bd_port -dir I -from 3 -to 0 sw ]
+  set sel [ create_bd_port -dir I -from 3 -to 0 sel ]
 
   # Create instance: Dientes_de_sierra_0, and set properties
   set Dientes_de_sierra_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Dientes_de_sierra:2.3 Dientes_de_sierra_0 ]
+
+  # Create instance: Math_0, and set properties
+  set Math_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Math:1.3 Math_0 ]
 
   # Create instance: RAM_test_0, and set properties
   set RAM_test_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:RAM_test:1.3 RAM_test_0 ]
@@ -175,7 +178,7 @@ proc create_root_design { parentCell } {
   set Sel_funcion_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Sel_funcion:1.4 Sel_funcion_0 ]
 
   # Create instance: Triangular_0, and set properties
-  set Triangular_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Triangular:2.0 Triangular_0 ]
+  set Triangular_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Triangular:2.2 Triangular_0 ]
 
   # Create instance: comp_cuadrada_0, and set properties
   set comp_cuadrada_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:comp_cuadrada:3.0 comp_cuadrada_0 ]
@@ -186,13 +189,14 @@ proc create_root_design { parentCell } {
    CONFIG.C_DATA_DEPTH {4096} \
    CONFIG.C_ENABLE_ILA_AXI_MON {false} \
    CONFIG.C_MONITOR_TYPE {Native} \
-   CONFIG.C_NUM_OF_PROBES {6} \
+   CONFIG.C_NUM_OF_PROBES {7} \
    CONFIG.C_PROBE0_WIDTH {8} \
    CONFIG.C_PROBE1_WIDTH {8} \
    CONFIG.C_PROBE2_WIDTH {8} \
    CONFIG.C_PROBE3_WIDTH {8} \
    CONFIG.C_PROBE4_WIDTH {8} \
    CONFIG.C_PROBE5_WIDTH {8} \
+   CONFIG.C_PROBE6_WIDTH {9} \
  ] $ila_0
 
   # Create instance: vio_0, and set properties
@@ -200,23 +204,35 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.C_EN_PROBE_IN_ACTIVITY {0} \
    CONFIG.C_NUM_PROBE_IN {0} \
-   CONFIG.C_NUM_PROBE_OUT {2} \
+   CONFIG.C_NUM_PROBE_OUT {3} \
    CONFIG.C_PROBE_OUT0_WIDTH {8} \
+   CONFIG.C_PROBE_OUT2_WIDTH {8} \
  ] $vio_0
+
+  # Create instance: vio_1, and set properties
+  set vio_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_1 ]
+  set_property -dict [ list \
+   CONFIG.C_EN_PROBE_IN_ACTIVITY {0} \
+   CONFIG.C_NUM_PROBE_IN {0} \
+   CONFIG.C_PROBE_OUT0_WIDTH {4} \
+ ] $vio_1
 
   # Create port connections
   connect_bd_net -net Dientes_de_sierra_0_sierra [get_bd_pins Dientes_de_sierra_0/sierra] [get_bd_pins RAM_test_0/sierra] [get_bd_pins Sel_funcion_0/sierra] [get_bd_pins Triangular_0/sierra] [get_bd_pins comp_cuadrada_0/sierra] [get_bd_pins ila_0/probe3]
+  connect_bd_net -net Math_0_f_out [get_bd_pins Math_0/f_out] [get_bd_pins ila_0/probe6]
   connect_bd_net -net RAM_test_0_seno [get_bd_pins RAM_test_0/seno] [get_bd_pins Sel_funcion_0/seno] [get_bd_pins ila_0/probe0]
-  connect_bd_net -net Sel_frec_0_clk_div [get_bd_pins Dientes_de_sierra_0/clk_div] [get_bd_pins RAM_test_0/clk_div] [get_bd_pins Sel_frec_0/clk_div] [get_bd_pins Sel_funcion_0/clk_div] [get_bd_pins Triangular_0/clk_div] [get_bd_pins comp_cuadrada_0/clk_div]
-  connect_bd_net -net Sel_funcion_0_funcion_a [get_bd_pins Sel_funcion_0/funcion_a] [get_bd_pins ila_0/probe4]
-  connect_bd_net -net Sel_funcion_0_funcion_b [get_bd_pins Sel_funcion_0/funcion_b] [get_bd_pins ila_0/probe5]
+  connect_bd_net -net Sel_frec_0_clk_div [get_bd_pins Dientes_de_sierra_0/clk_div] [get_bd_pins Math_0/clk_div] [get_bd_pins RAM_test_0/clk_div] [get_bd_pins Sel_frec_0/clk_div] [get_bd_pins Sel_funcion_0/clk_div] [get_bd_pins Triangular_0/clk_div] [get_bd_pins comp_cuadrada_0/clk_div]
+  connect_bd_net -net Sel_funcion_0_funcion_a [get_bd_pins Math_0/funcion_a] [get_bd_pins Sel_funcion_0/funcion_a] [get_bd_pins ila_0/probe4]
+  connect_bd_net -net Sel_funcion_0_funcion_b [get_bd_pins Math_0/funcion_b] [get_bd_pins Sel_funcion_0/funcion_b] [get_bd_pins ila_0/probe5]
   connect_bd_net -net Triangular_0_triangular [get_bd_pins Sel_funcion_0/triangulada] [get_bd_pins Triangular_0/triangulada] [get_bd_pins ila_0/probe2]
   connect_bd_net -net btn_0_1 [get_bd_ports btn] [get_bd_pins Sel_funcion_0/btn]
-  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins Sel_frec_0/clk] [get_bd_pins ila_0/clk] [get_bd_pins vio_0/clk]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins Sel_frec_0/clk] [get_bd_pins ila_0/clk] [get_bd_pins vio_0/clk] [get_bd_pins vio_1/clk]
   connect_bd_net -net comp_cuadrada_0_cuadrada [get_bd_pins Sel_funcion_0/cuadrada] [get_bd_pins comp_cuadrada_0/cuadrada] [get_bd_pins ila_0/probe1]
-  connect_bd_net -net sw_0_1 [get_bd_ports sw] [get_bd_pins Sel_frec_0/sw]
+  connect_bd_net -net sel_0_1 [get_bd_ports sel] [get_bd_pins Math_0/sel]
   connect_bd_net -net vio_0_probe_out0 [get_bd_pins comp_cuadrada_0/referencia] [get_bd_pins vio_0/probe_out0]
   connect_bd_net -net vio_0_probe_out1 [get_bd_pins Sel_funcion_0/reset] [get_bd_pins vio_0/probe_out1]
+  connect_bd_net -net vio_0_probe_out2 [get_bd_pins Math_0/cte] [get_bd_pins vio_0/probe_out2]
+  connect_bd_net -net vio_1_probe_out0 [get_bd_pins Sel_frec_0/sw] [get_bd_pins vio_1/probe_out0]
 
   # Create address segments
 

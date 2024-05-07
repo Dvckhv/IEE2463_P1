@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Sat May  4 14:44:07 2024
+-- Date        : Sat May  4 19:21:51 2024
 -- Host        : PC_Vicho_N running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim {c:/Users/vicen/OneDrive/Escritorio/Septimo
 --               Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Triangular_0_0/Proyecto_1_sep_Triangular_0_0_sim_netlist.vhdl}
@@ -199,10 +199,10 @@ end Proyecto_1_sep_Triangular_0_0;
 
 architecture STRUCTURE of Proyecto_1_sep_Triangular_0_0 is
   signal \<const0>\ : STD_LOGIC;
-  signal \^triangulada\ : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal \^triangulada\ : STD_LOGIC_VECTOR ( 7 downto 1 );
 begin
-  triangulada(7) <= \<const0>\;
-  triangulada(6 downto 0) <= \^triangulada\(6 downto 0);
+  triangulada(7 downto 1) <= \^triangulada\(7 downto 1);
+  triangulada(0) <= \<const0>\;
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
@@ -211,6 +211,6 @@ U0: entity work.Proyecto_1_sep_Triangular_0_0_Triangular
      port map (
       clk_div => clk_div,
       sierra(7 downto 0) => sierra(7 downto 0),
-      triangulada(6 downto 0) => \^triangulada\(6 downto 0)
+      triangulada(6 downto 0) => \^triangulada\(7 downto 1)
     );
 end STRUCTURE;

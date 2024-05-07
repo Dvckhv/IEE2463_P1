@@ -30,4 +30,10 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_
 # IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_Sel_funcion_0_0/Proyecto_1_sep_Sel_funcion_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_Sel_funcion_0_0 || ORIG_REF_NAME==Proyecto_1_sep_Sel_funcion_0_0} -quiet] -quiet
 
+# IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_Math_0_0/Proyecto_1_sep_Math_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_Math_0_0 || ORIG_REF_NAME==Proyecto_1_sep_Math_0_0} -quiet] -quiet
+
+# IP: bd/Proyecto_1_sep/ip/Proyecto_1_sep_vio_1_0/Proyecto_1_sep_vio_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Proyecto_1_sep_vio_1_0 || ORIG_REF_NAME==Proyecto_1_sep_vio_1_0} -quiet] -quiet
+
 # XDC: bd/Proyecto_1_sep/Proyecto_1_sep_ooc.xdc

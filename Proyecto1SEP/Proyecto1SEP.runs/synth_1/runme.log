@@ -22,44 +22,48 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 59696
+INFO: [Synth 8-7075] Helper process launched with PID 62740
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1064.098 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1063.898 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_wrapper' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/hdl/Proyecto_1_sep_wrapper.vhd:22]
 INFO: [Synth 8-3491] module 'Proyecto_1_sep' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:14' bound to instance 'Proyecto_1_sep_i' of component 'Proyecto_1_sep' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/hdl/Proyecto_1_sep_wrapper.vhd:31]
 INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:26]
-INFO: [Synth 8-3491] module 'Proyecto_1_sep_Dientes_de_sierra_0_2' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_Dientes_de_sierra_0_2_stub.vhdl:5' bound to instance 'Dientes_de_sierra_0' of component 'Proyecto_1_sep_Dientes_de_sierra_0_2' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:113]
-INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Dientes_de_sierra_0_2' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_Dientes_de_sierra_0_2_stub.vhdl:13]
-INFO: [Synth 8-3491] module 'Proyecto_1_sep_RAM_test_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_RAM_test_0_0_stub.vhdl:5' bound to instance 'RAM_test_0' of component 'Proyecto_1_sep_RAM_test_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:118]
-INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_RAM_test_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_RAM_test_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'Proyecto_1_sep_Sel_frec_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_Sel_frec_0_0_stub.vhdl:5' bound to instance 'Sel_frec_0' of component 'Proyecto_1_sep_Sel_frec_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:124]
-INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Sel_frec_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_Sel_frec_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'Proyecto_1_sep_Sel_funcion_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_Sel_funcion_0_0_stub.vhdl:5' bound to instance 'Sel_funcion_0' of component 'Proyecto_1_sep_Sel_funcion_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:130]
-INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Sel_funcion_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_Sel_funcion_0_0_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'Proyecto_1_sep_Triangular_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_Triangular_0_0_stub.vhdl:5' bound to instance 'Triangular_0' of component 'Proyecto_1_sep_Triangular_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:142]
-INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Triangular_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_Triangular_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'Proyecto_1_sep_comp_cuadrada_0_3' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_comp_cuadrada_0_3_stub.vhdl:5' bound to instance 'comp_cuadrada_0' of component 'Proyecto_1_sep_comp_cuadrada_0_3' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_comp_cuadrada_0_3' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_comp_cuadrada_0_3_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'Proyecto_1_sep_ila_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_ila_0_0_stub.vhdl:5' bound to instance 'ila_0' of component 'Proyecto_1_sep_ila_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:155]
-INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_ila_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_ila_0_0_stub.vhdl:18]
-INFO: [Synth 8-3491] module 'Proyecto_1_sep_vio_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_vio_0_0_stub.vhdl:5' bound to instance 'vio_0' of component 'Proyecto_1_sep_vio_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_vio_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-59800-PC_Vicho_N/realtime/Proyecto_1_sep_vio_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_Dientes_de_sierra_0_2' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Dientes_de_sierra_0_2_stub.vhdl:5' bound to instance 'Dientes_de_sierra_0' of component 'Proyecto_1_sep_Dientes_de_sierra_0_2' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Dientes_de_sierra_0_2' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Dientes_de_sierra_0_2_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_Math_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Math_0_0_stub.vhdl:5' bound to instance 'Math_0' of component 'Proyecto_1_sep_Math_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Math_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Math_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_RAM_test_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_RAM_test_0_0_stub.vhdl:5' bound to instance 'RAM_test_0' of component 'Proyecto_1_sep_RAM_test_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_RAM_test_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_RAM_test_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_Sel_frec_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Sel_frec_0_0_stub.vhdl:5' bound to instance 'Sel_frec_0' of component 'Proyecto_1_sep_Sel_frec_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Sel_frec_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Sel_frec_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_Sel_funcion_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Sel_funcion_0_0_stub.vhdl:5' bound to instance 'Sel_funcion_0' of component 'Proyecto_1_sep_Sel_funcion_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Sel_funcion_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Sel_funcion_0_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_Triangular_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Triangular_0_0_stub.vhdl:5' bound to instance 'Triangular_0' of component 'Proyecto_1_sep_Triangular_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_Triangular_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_Triangular_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_comp_cuadrada_0_3' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_comp_cuadrada_0_3_stub.vhdl:5' bound to instance 'comp_cuadrada_0' of component 'Proyecto_1_sep_comp_cuadrada_0_3' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_comp_cuadrada_0_3' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_comp_cuadrada_0_3_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_ila_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_ila_0_0_stub.vhdl:5' bound to instance 'ila_0' of component 'Proyecto_1_sep_ila_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_ila_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_ila_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_vio_0_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_vio_0_0_stub.vhdl:5' bound to instance 'vio_0' of component 'Proyecto_1_sep_vio_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_vio_0_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_vio_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'Proyecto_1_sep_vio_1_0' declared at 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_vio_1_0_stub.vhdl:5' bound to instance 'vio_1' of component 'Proyecto_1_sep_vio_1_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'Proyecto_1_sep_vio_1_0' [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/.Xil/Vivado-60632-PC_Vicho_N/realtime/Proyecto_1_sep_vio_1_0_stub.vhdl:13]
 INFO: [Synth 8-256] done synthesizing module 'Proyecto_1_sep' (1#1) [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/synth/Proyecto_1_sep.vhd:26]
 INFO: [Synth 8-256] done synthesizing module 'Proyecto_1_sep_wrapper' (2#1) [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/hdl/Proyecto_1_sep_wrapper.vhd:22]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1064.098 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1063.898 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1064.098 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1063.898 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1064.098 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1063.898 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1064.098 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1063.898 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -80,6 +84,10 @@ Parsing XDC File [c:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyec
 Finished Parsing XDC File [c:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Triangular_0_0/Proyecto_1_sep_Triangular_0_0/Proyecto_1_sep_Triangular_0_0_in_context.xdc] for cell 'Proyecto_1_sep_i/Triangular_0'
 Parsing XDC File [c:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Sel_funcion_0_0/Proyecto_1_sep_Sel_funcion_0_0/Proyecto_1_sep_Sel_funcion_0_0_in_context.xdc] for cell 'Proyecto_1_sep_i/Sel_funcion_0'
 Finished Parsing XDC File [c:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Sel_funcion_0_0/Proyecto_1_sep_Sel_funcion_0_0/Proyecto_1_sep_Sel_funcion_0_0_in_context.xdc] for cell 'Proyecto_1_sep_i/Sel_funcion_0'
+Parsing XDC File [c:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Math_0_0/Proyecto_1_sep_Math_0_0/Proyecto_1_sep_Math_0_0_in_context.xdc] for cell 'Proyecto_1_sep_i/Math_0'
+Finished Parsing XDC File [c:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_Math_0_0/Proyecto_1_sep_Math_0_0/Proyecto_1_sep_Math_0_0_in_context.xdc] for cell 'Proyecto_1_sep_i/Math_0'
+Parsing XDC File [c:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_vio_1_0/Proyecto_1_sep_vio_1_0/Proyecto_1_sep_vio_1_0_in_context.xdc] for cell 'Proyecto_1_sep_i/vio_1'
+Finished Parsing XDC File [c:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_vio_1_0/Proyecto_1_sep_vio_1_0/Proyecto_1_sep_vio_1_0_in_context.xdc] for cell 'Proyecto_1_sep_i/vio_1'
 Parsing XDC File [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Ayudantias/Ayudantia 1/Zybo-Z7-Master.xdc]
 Finished Parsing XDC File [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Ayudantias/Ayudantia 1/Zybo-Z7-Master.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Ayudantias/Ayudantia 1/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Proyecto_1_sep_wrapper_propImpl.xdc].
@@ -88,20 +96,20 @@ Parsing XDC File [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyec
 Finished Parsing XDC File [C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1107.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1121.660 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1107.250 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1121.660 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1107.250 ; gain = 43.152
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1121.660 ; gain = 57.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1107.250 ; gain = 43.152
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1121.660 ; gain = 57.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -115,11 +123,13 @@ Applied set_property DONT_TOUCH = true for Proyecto_1_sep_i/comp_cuadrada_0. (co
 Applied set_property DONT_TOUCH = true for Proyecto_1_sep_i/Dientes_de_sierra_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Proyecto_1_sep_i/Triangular_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for Proyecto_1_sep_i/Sel_funcion_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Proyecto_1_sep_i/Math_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Proyecto_1_sep_i/vio_1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1107.250 ; gain = 43.152
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1121.660 ; gain = 57.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1107.250 ; gain = 43.152
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 1121.660 ; gain = 57.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -141,25 +151,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1107.250 ; gain = 43.152
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1121.660 ; gain = 57.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1138.250 ; gain = 74.152
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1144.078 ; gain = 80.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1138.250 ; gain = 74.152
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1144.078 ; gain = 80.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1157.371 ; gain = 93.273
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1163.695 ; gain = 99.797
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -177,37 +187,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1163.160 ; gain = 99.062
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1168.488 ; gain = 104.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1163.160 ; gain = 99.062
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1168.488 ; gain = 104.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1163.160 ; gain = 99.062
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1168.488 ; gain = 104.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1163.160 ; gain = 99.062
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1168.488 ; gain = 104.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1163.160 ; gain = 99.062
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1168.488 ; gain = 104.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1163.160 ; gain = 99.062
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1168.488 ; gain = 104.590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -218,13 +228,15 @@ Report BlackBoxes:
 |      |BlackBox name                        |Instances |
 +------+-------------------------------------+----------+
 |1     |Proyecto_1_sep_Dientes_de_sierra_0_2 |         1|
-|2     |Proyecto_1_sep_RAM_test_0_0          |         1|
-|3     |Proyecto_1_sep_Sel_frec_0_0          |         1|
-|4     |Proyecto_1_sep_Sel_funcion_0_0       |         1|
-|5     |Proyecto_1_sep_Triangular_0_0        |         1|
-|6     |Proyecto_1_sep_comp_cuadrada_0_3     |         1|
-|7     |Proyecto_1_sep_ila_0_0               |         1|
-|8     |Proyecto_1_sep_vio_0_0               |         1|
+|2     |Proyecto_1_sep_Math_0_0              |         1|
+|3     |Proyecto_1_sep_RAM_test_0_0          |         1|
+|4     |Proyecto_1_sep_Sel_frec_0_0          |         1|
+|5     |Proyecto_1_sep_Sel_funcion_0_0       |         1|
+|6     |Proyecto_1_sep_Triangular_0_0        |         1|
+|7     |Proyecto_1_sep_comp_cuadrada_0_3     |         1|
+|8     |Proyecto_1_sep_ila_0_0               |         1|
+|9     |Proyecto_1_sep_vio_0_0               |         1|
+|10    |Proyecto_1_sep_vio_1_0               |         1|
 +------+-------------------------------------+----------+
 
 Report Cell Usage: 
@@ -232,35 +244,35 @@ Report Cell Usage:
 |      |Cell                                      |Count |
 +------+------------------------------------------+------+
 |1     |Proyecto_1_sep_Dientes_de_sierra_0_2_bbox |     1|
-|2     |Proyecto_1_sep_RAM_test_0_0_bbox          |     1|
-|3     |Proyecto_1_sep_Sel_frec_0_0_bbox          |     1|
-|4     |Proyecto_1_sep_Sel_funcion_0_0_bbox       |     1|
-|5     |Proyecto_1_sep_Triangular_0_0_bbox        |     1|
-|6     |Proyecto_1_sep_comp_cuadrada_0_3_bbox     |     1|
-|7     |Proyecto_1_sep_ila_0_0_bbox               |     1|
-|8     |Proyecto_1_sep_vio_0_0_bbox               |     1|
-|9     |IBUF                                      |     9|
+|2     |Proyecto_1_sep_Math_0_0_bbox              |     1|
+|3     |Proyecto_1_sep_RAM_test_0_0_bbox          |     1|
+|4     |Proyecto_1_sep_Sel_frec_0_0_bbox          |     1|
+|5     |Proyecto_1_sep_Sel_funcion_0_0_bbox       |     1|
+|6     |Proyecto_1_sep_Triangular_0_0_bbox        |     1|
+|7     |Proyecto_1_sep_comp_cuadrada_0_3_bbox     |     1|
+|8     |Proyecto_1_sep_ila_0_0_bbox               |     1|
+|9     |Proyecto_1_sep_vio_0_0_bbox               |     1|
+|10    |Proyecto_1_sep_vio_1_0_bbox               |     1|
+|11    |IBUF                                      |     9|
 +------+------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1163.160 ; gain = 99.062
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1168.488 ; gain = 104.590
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 1163.160 ; gain = 55.910
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1163.160 ; gain = 99.062
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:29 . Memory (MB): peak = 1168.488 ; gain = 46.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1168.488 ; gain = 104.590
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1174.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1180.051 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1182.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1187.973 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-37 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+41 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1182.066 ; gain = 117.969
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1187.973 ; gain = 124.074
 INFO: [Common 17-1381] The checkpoint 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.runs/synth_1/Proyecto_1_sep_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Proyecto_1_sep_wrapper_utilization_synth.rpt -pb Proyecto_1_sep_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat May  4 18:38:13 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon May  6 21:38:00 2024...
