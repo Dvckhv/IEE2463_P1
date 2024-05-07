@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:Dientes_de_sierra:1.1
--- IP Revision: 4
+-- IP VLNV: xilinx.com:user:Dientes_de_sierra:2.0
+-- IP Revision: 6
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -74,7 +74,7 @@ ARCHITECTURE Proyecto_1_sep_Dientes_de_sierra_0_0_arch OF Proyecto_1_sep_Dientes
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF Proyecto_1_sep_Dientes_de_sierra_0_0_arch : ARCHITECTURE IS "Proyecto_1_sep_Dientes_de_sierra_0_0,Dientes_de_sierra,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF Proyecto_1_sep_Dientes_de_sierra_0_0_arch: ARCHITECTURE IS "Proyecto_1_sep_Dientes_de_sierra_0_0,Dientes_de_sierra,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Dientes_de_sierra,x_ipVersion=1.1,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
+  ATTRIBUTE CORE_GENERATION_INFO OF Proyecto_1_sep_Dientes_de_sierra_0_0_arch: ARCHITECTURE IS "Proyecto_1_sep_Dientes_de_sierra_0_0,Dientes_de_sierra,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=Dientes_de_sierra,x_ipVersion=2.0,x_ipCoreRevision=6,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF Proyecto_1_sep_Dientes_de_sierra_0_0_arch: ARCHITECTURE IS "package_project";
   ATTRIBUTE X_INTERFACE_INFO : STRING;

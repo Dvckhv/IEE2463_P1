@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1714760026">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1715045764">
   <File Type="PA-TCL" Name="Proyecto_1_sep_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Proyecto_1_sep_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Proyecto_1_sep_wrapper_reports.tcl"/>
@@ -49,13 +49,16 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_ila_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_Dientes_de_sierra_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_vio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_RAM_test_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_Sel_frec_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_comp_cuadrada_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_vio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_Sel_funcion_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_Dientes_de_sierra_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_Triangular_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="Proyecto_1_sep_Math_0_0"/>
 </GenRun>

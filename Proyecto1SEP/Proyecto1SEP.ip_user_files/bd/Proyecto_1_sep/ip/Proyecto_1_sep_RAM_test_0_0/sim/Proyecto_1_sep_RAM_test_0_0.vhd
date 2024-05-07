@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:RAM_test:1.0
--- IP Revision: 2
+-- IP VLNV: xilinx.com:user:RAM_test:1.3
+-- IP Revision: 5
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,9 +55,9 @@ USE ieee.numeric_std.ALL;
 
 ENTITY Proyecto_1_sep_RAM_test_0_0 IS
   PORT (
-    clk : IN STD_LOGIC;
-    address : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    value : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+    clk_div : IN STD_LOGIC;
+    sierra : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    seno : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
   );
 END Proyecto_1_sep_RAM_test_0_0;
 
@@ -66,22 +66,22 @@ ARCHITECTURE Proyecto_1_sep_RAM_test_0_0_arch OF Proyecto_1_sep_RAM_test_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF Proyecto_1_sep_RAM_test_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT RAM_test IS
     PORT (
-      clk : IN STD_LOGIC;
-      address : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-      value : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+      clk_div : IN STD_LOGIC;
+      sierra : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      seno : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
     );
   END COMPONENT RAM_test;
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF Proyecto_1_sep_RAM_test_0_0_arch: ARCHITECTURE IS "package_project";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 5000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk_div: SIGNAL IS "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_INFO OF clk_div: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : RAM_test
     PORT MAP (
-      clk => clk,
-      address => address,
-      value => value
+      clk_div => clk_div,
+      sierra => sierra,
+      seno => seno
     );
 END Proyecto_1_sep_RAM_test_0_0_arch;

@@ -1,23 +1,40 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.1187",
-   "Default View_TopLeft":"-90,-29",
+   "Default View_ScaleFactor":"0.867606",
+   "Default View_TopLeft":"-128,0",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clk -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
-preplace portBus sw -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
-preplace inst RAM_test_0 -pg 1 -lvl 3 -x 530 -y 80 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 4 -x 750 -y 150 -defaultsOSRD
-preplace inst Sel_frec_0 -pg 1 -lvl 1 -x 110 -y 70 -defaultsOSRD
-preplace inst Dientes_de_sierra_0 -pg 1 -lvl 2 -x 310 -y 90 -defaultsOSRD
-preplace netloc RAM_test_0_value 1 3 1 640 80n
-preplace netloc Dientes_de_sierra_0_address 1 2 2 420 10 660J
-preplace netloc sw_0_1 1 0 1 NJ 80
-preplace netloc clk_1 1 0 4 20J 150 N 150 N 150 650
-preplace netloc Sel_frec_0_clk_div 1 1 2 200 30 410
-levelinfo -pg 1 0 110 310 530 750 850
-pagesize -pg 1 -db -bbox -sgen -100 0 850 230
+preplace port clk -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace portBus sel -pg 1 -lvl 0 -x 0 -y 690 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 7 -x 1510 -y 250 -defaultsOSRD
+preplace inst Sel_frec_0 -pg 1 -lvl 2 -x 310 -y 380 -defaultsOSRD
+preplace inst RAM_test_0 -pg 1 -lvl 4 -x 750 -y 70 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 3 -x 510 -y 610 -defaultsOSRD
+preplace inst Dientes_de_sierra_0 -pg 1 -lvl 3 -x 510 -y 380 -defaultsOSRD
+preplace inst comp_cuadrada_0 -pg 1 -lvl 4 -x 750 -y 360 -defaultsOSRD
+preplace inst Sel_funcion_0 -pg 1 -lvl 5 -x 1050 -y 380 -defaultsOSRD
+preplace inst Triangular_0 -pg 1 -lvl 4 -x 750 -y 190 -defaultsOSRD
+preplace inst vio_1 -pg 1 -lvl 1 -x 120 -y 390 -defaultsOSRD
+preplace inst Math_0 -pg 1 -lvl 6 -x 1300 -y 610 -defaultsOSRD
+preplace netloc clk_1 1 0 7 20 450 220 450 410 260 NJ 260 870J 180 NJ 180 N
+preplace netloc Sel_frec_0_clk_div 1 2 4 400 440 610 450 900 570 NJ
+preplace netloc vio_0_probe_out0 1 3 1 620 360n
+preplace netloc comp_cuadrada_0_cuadrada 1 4 3 880 220 NJ 220 NJ
+preplace netloc Dientes_de_sierra_0_sierra 1 3 4 630 440 910 500 NJ 500 1410J
+preplace netloc RAM_test_0_seno 1 4 3 910 200 NJ 200 N
+preplace netloc Triangular_0_triangular 1 4 3 890 240 NJ 240 NJ
+preplace netloc Sel_funcion_0_funcion_a 1 5 2 1180 280 NJ
+preplace netloc Sel_funcion_0_funcion_b 1 5 2 1190 300 NJ
+preplace netloc btn_0_1 1 0 5 NJ 280 NJ 280 NJ 280 NJ 280 870J
+preplace netloc vio_0_probe_out1 1 3 2 N 610 920J
+preplace netloc vio_1_probe_out0 1 1 1 NJ 390
+preplace netloc vio_0_probe_out2 1 3 3 N 630 NJ 630 NJ
+preplace netloc sel_0_1 1 0 6 NJ 690 NJ 690 NJ 690 NJ 690 NJ 690 1180J
+preplace netloc Math_0_f_out 1 6 1 1420 320n
+levelinfo -pg 1 0 120 310 510 750 1050 1300 1510 1610
+pagesize -pg 1 -db -bbox -sgen -100 0 1610 710
 "
 }
 {

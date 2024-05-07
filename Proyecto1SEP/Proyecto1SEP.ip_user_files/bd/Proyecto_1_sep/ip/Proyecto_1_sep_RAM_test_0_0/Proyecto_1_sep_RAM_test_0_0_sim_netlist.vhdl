@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Thu May  2 21:27:59 2024
+-- Date        : Fri May  3 23:59:46 2024
 -- Host        : PC_Vicho_N running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim {c:/Users/vicen/OneDrive/Escritorio/Septimo
 --               Semestre/SEP/Proyecto1/Proyecto1SEP/Proyecto1SEP.srcs/sources_1/bd/Proyecto_1_sep/ip/Proyecto_1_sep_RAM_test_0_0/Proyecto_1_sep_RAM_test_0_0_sim_netlist.vhdl}
@@ -16,49 +16,49 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Proyecto_1_sep_RAM_test_0_0_RAM_test is
   port (
-    value : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    clk : in STD_LOGIC;
-    address : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    seno : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    clk_div : in STD_LOGIC;
+    sierra : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of Proyecto_1_sep_RAM_test_0_0_RAM_test : entity is "RAM_test";
 end Proyecto_1_sep_RAM_test_0_0_RAM_test;
 
 architecture STRUCTURE of Proyecto_1_sep_RAM_test_0_0_RAM_test is
-  signal NLW_value_reg_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 8 );
-  signal NLW_value_reg_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal NLW_value_reg_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
-  signal NLW_value_reg_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_seno_reg_DOADO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 8 );
+  signal NLW_seno_reg_DOBDO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal NLW_seno_reg_DOPADOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal NLW_seno_reg_DOPBDOP_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   attribute \MEM.PORTA.DATA_BIT_LAYOUT\ : string;
-  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of value_reg : label is "p0_d8";
+  attribute \MEM.PORTA.DATA_BIT_LAYOUT\ of seno_reg : label is "p0_d8";
   attribute METHODOLOGY_DRC_VIOS : string;
-  attribute METHODOLOGY_DRC_VIOS of value_reg : label is "{SYNTH-6 {cell *THIS*}}";
+  attribute METHODOLOGY_DRC_VIOS of seno_reg : label is "{SYNTH-6 {cell *THIS*}}";
   attribute RTL_RAM_BITS : integer;
-  attribute RTL_RAM_BITS of value_reg : label is 2048;
+  attribute RTL_RAM_BITS of seno_reg : label is 2048;
   attribute RTL_RAM_NAME : string;
-  attribute RTL_RAM_NAME of value_reg : label is "U0/value";
+  attribute RTL_RAM_NAME of seno_reg : label is "U0/seno";
   attribute RTL_RAM_TYPE : string;
-  attribute RTL_RAM_TYPE of value_reg : label is "RAM_SP";
+  attribute RTL_RAM_TYPE of seno_reg : label is "RAM_SP";
   attribute bram_addr_begin : integer;
-  attribute bram_addr_begin of value_reg : label is 0;
+  attribute bram_addr_begin of seno_reg : label is 0;
   attribute bram_addr_end : integer;
-  attribute bram_addr_end of value_reg : label is 1023;
+  attribute bram_addr_end of seno_reg : label is 1023;
   attribute bram_slice_begin : integer;
-  attribute bram_slice_begin of value_reg : label is 0;
+  attribute bram_slice_begin of seno_reg : label is 0;
   attribute bram_slice_end : integer;
-  attribute bram_slice_end of value_reg : label is 7;
+  attribute bram_slice_end of seno_reg : label is 7;
   attribute ram_addr_begin : integer;
-  attribute ram_addr_begin of value_reg : label is 0;
+  attribute ram_addr_begin of seno_reg : label is 0;
   attribute ram_addr_end : integer;
-  attribute ram_addr_end of value_reg : label is 1023;
+  attribute ram_addr_end of seno_reg : label is 1023;
   attribute ram_offset : integer;
-  attribute ram_offset of value_reg : label is 0;
+  attribute ram_offset of seno_reg : label is 0;
   attribute ram_slice_begin : integer;
-  attribute ram_slice_begin of value_reg : label is 0;
+  attribute ram_slice_begin of seno_reg : label is 0;
   attribute ram_slice_end : integer;
-  attribute ram_slice_end of value_reg : label is 7;
+  attribute ram_slice_end of seno_reg : label is 7;
 begin
-value_reg: unisim.vcomponents.RAMB18E1
+seno_reg: unisim.vcomponents.RAMB18E1
     generic map(
       DOA_REG => 0,
       DOB_REG => 0,
@@ -153,20 +153,20 @@ value_reg: unisim.vcomponents.RAMB18E1
     )
         port map (
       ADDRARDADDR(13 downto 12) => B"00",
-      ADDRARDADDR(11 downto 4) => address(7 downto 0),
+      ADDRARDADDR(11 downto 4) => sierra(7 downto 0),
       ADDRARDADDR(3 downto 0) => B"0000",
       ADDRBWRADDR(13 downto 0) => B"11111111111111",
-      CLKARDCLK => clk,
+      CLKARDCLK => clk_div,
       CLKBWRCLK => '0',
       DIADI(15 downto 0) => B"0000000011111111",
       DIBDI(15 downto 0) => B"1111111111111111",
       DIPADIP(1 downto 0) => B"00",
       DIPBDIP(1 downto 0) => B"11",
-      DOADO(15 downto 8) => NLW_value_reg_DOADO_UNCONNECTED(15 downto 8),
-      DOADO(7 downto 0) => value(7 downto 0),
-      DOBDO(15 downto 0) => NLW_value_reg_DOBDO_UNCONNECTED(15 downto 0),
-      DOPADOP(1 downto 0) => NLW_value_reg_DOPADOP_UNCONNECTED(1 downto 0),
-      DOPBDOP(1 downto 0) => NLW_value_reg_DOPBDOP_UNCONNECTED(1 downto 0),
+      DOADO(15 downto 8) => NLW_seno_reg_DOADO_UNCONNECTED(15 downto 8),
+      DOADO(7 downto 0) => seno(7 downto 0),
+      DOBDO(15 downto 0) => NLW_seno_reg_DOBDO_UNCONNECTED(15 downto 0),
+      DOPADOP(1 downto 0) => NLW_seno_reg_DOPADOP_UNCONNECTED(1 downto 0),
+      DOPBDOP(1 downto 0) => NLW_seno_reg_DOPBDOP_UNCONNECTED(1 downto 0),
       ENARDEN => '1',
       ENBWREN => '0',
       REGCEAREGCE => '0',
@@ -185,9 +185,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity Proyecto_1_sep_RAM_test_0_0 is
   port (
-    clk : in STD_LOGIC;
-    address : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    value : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    clk_div : in STD_LOGIC;
+    sierra : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    seno : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of Proyecto_1_sep_RAM_test_0_0 : entity is true;
@@ -203,14 +203,14 @@ end Proyecto_1_sep_RAM_test_0_0;
 
 architecture STRUCTURE of Proyecto_1_sep_RAM_test_0_0 is
   attribute x_interface_info : string;
-  attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
+  attribute x_interface_info of clk_div : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 5000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1, INSERT_VIP 0";
+  attribute x_interface_parameter of clk_div : signal is "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
 begin
 U0: entity work.Proyecto_1_sep_RAM_test_0_0_RAM_test
      port map (
-      address(7 downto 0) => address(7 downto 0),
-      clk => clk,
-      value(7 downto 0) => value(7 downto 0)
+      clk_div => clk_div,
+      seno(7 downto 0) => seno(7 downto 0),
+      sierra(7 downto 0) => sierra(7 downto 0)
     );
 end STRUCTURE;
