@@ -86,3 +86,9 @@ comparison4 : process(clock)
     
 end Behavioral;
 
+
+if  sierra > 256/2
+    out = 256-sierra;
+else
+    out = sierra;
+end if; 
