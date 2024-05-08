@@ -3,7 +3,7 @@ with open("addr_sin.coe", "w") as f:
     f.write("memory_initialization_vector=\n")
 
     for i in range(255):
-        f.write(f"{i*4:0{8}x}\n")
+        f.write(f"{i*10:0{8}x}\n")
     f.write("FFFFFFFF;")
 
 with open("ctrl_sin.coe", "w") as f:
@@ -18,4 +18,4 @@ with open("mask_sin.coe", "w") as f:
     f.write("memory_initialization_radix=16;\n")
     f.write("memory_initialization_vector=00000000;\n")
     for i in range(255):
-        f.write("FFFFFFFF;")
+        f.write("FFFFFFFF;\n")
