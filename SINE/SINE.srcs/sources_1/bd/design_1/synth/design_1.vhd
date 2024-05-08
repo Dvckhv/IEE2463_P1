@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Wed May  8 00:27:11 2024
+--Date        : Wed May  8 15:58:26 2024
 --Host        : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -14,11 +14,10 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1 is
   port (
     clock : in STD_LOGIC;
-    enable : in STD_LOGIC;
     reset : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=3,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=3,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -78,10 +77,16 @@ architecture STRUCTURE of design_1 is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_rst_clk_wiz_100M_0;
-  component design_1_SINE_RAM_0_0 is
+  component design_1_Dientes_de_sierra_0_0 is
   port (
-    enable : in STD_LOGIC;
-    sin_data : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    clk_div : in STD_LOGIC;
+    sierra : out STD_LOGIC_VECTOR ( 7 downto 0 )
+  );
+  end component design_1_Dientes_de_sierra_0_0;
+  component design_1_SINE_RAM_0_1 is
+  port (
+    counter : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    seno : out STD_LOGIC_VECTOR ( 7 downto 0 );
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 9 downto 0 );
@@ -104,8 +109,9 @@ architecture STRUCTURE of design_1 is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component design_1_SINE_RAM_0_0;
-  signal SINE_RAM_0_sin_data : STD_LOGIC_VECTOR ( 7 downto 0 );
+  end component design_1_SINE_RAM_0_1;
+  signal Dientes_de_sierra_0_sierra : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal SINE_RAM_0_seno : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi_traffic_gen_1_M_AXI_LITE_CH1_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_traffic_gen_1_M_AXI_LITE_CH1_ARREADY : STD_LOGIC;
   signal axi_traffic_gen_1_M_AXI_LITE_CH1_ARVALID : STD_LOGIC;
@@ -126,7 +132,6 @@ architecture STRUCTURE of design_1 is
   signal axi_traffic_gen_1_M_AXI_LITE_CH1_WVALID : STD_LOGIC;
   signal clk_wiz_clk_out1 : STD_LOGIC;
   signal clk_wiz_locked : STD_LOGIC;
-  signal enable_0_1 : STD_LOGIC;
   signal reset_rtl_1 : STD_LOGIC;
   signal rst_clk_wiz_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal sys_clock_1 : STD_LOGIC;
@@ -143,12 +148,16 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of reset : signal is "xilinx.com:signal:reset:1.0 RST.RESET RST";
   attribute X_INTERFACE_PARAMETER of reset : signal is "XIL_INTERFACENAME RST.RESET, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
 begin
-  enable_0_1 <= enable;
   reset_rtl_1 <= reset;
   sys_clock_1 <= clock;
-SINE_RAM_0: component design_1_SINE_RAM_0_0
+Dientes_de_sierra_0: component design_1_Dientes_de_sierra_0_0
      port map (
-      enable => enable_0_1,
+      clk_div => clk_wiz_clk_out1,
+      sierra(7 downto 0) => Dientes_de_sierra_0_sierra(7 downto 0)
+    );
+SINE_RAM_0: component design_1_SINE_RAM_0_1
+     port map (
+      counter(7 downto 0) => Dientes_de_sierra_0_sierra(7 downto 0),
       s00_axi_aclk => clk_wiz_clk_out1,
       s00_axi_araddr(9 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_ARADDR(9 downto 0),
       s00_axi_aresetn => rst_clk_wiz_100M_peripheral_aresetn(0),
@@ -170,7 +179,7 @@ SINE_RAM_0: component design_1_SINE_RAM_0_0
       s00_axi_wready => axi_traffic_gen_1_M_AXI_LITE_CH1_WREADY,
       s00_axi_wstrb(3 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_WSTRB(3 downto 0),
       s00_axi_wvalid => axi_traffic_gen_1_M_AXI_LITE_CH1_WVALID,
-      sin_data(7 downto 0) => SINE_RAM_0_sin_data(7 downto 0)
+      seno(7 downto 0) => SINE_RAM_0_seno(7 downto 0)
     );
 axi_traffic_gen_1: component design_1_axi_traffic_gen_1_0
      port map (
@@ -207,7 +216,7 @@ clk_wiz: component design_1_clk_wiz_0
 ila_0: component design_1_ila_0_0
      port map (
       clk => clk_wiz_clk_out1,
-      probe0(7 downto 0) => SINE_RAM_0_sin_data(7 downto 0)
+      probe0(7 downto 0) => SINE_RAM_0_seno(7 downto 0)
     );
 rst_clk_wiz_100M: component design_1_rst_clk_wiz_100M_0
      port map (

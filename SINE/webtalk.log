@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed May  8 15:53:35 2024
+# Process ID: 35992
+# Current directory: c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE
+# Command line: wbtcv.exe -mode batch -source c:/users/pato/desktop/universida/2024-1/sep/iee2463_p1/sine/sine.tmp/sine_ram_v3_project/SINE_RAM_v3_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/webtalk.log
+# Journal file: c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE\webtalk.jou
+#-----------------------------------------------------------
+source c:/users/pato/desktop/universida/2024-1/sep/iee2463_p1/sine/sine.tmp/sine_ram_v3_project/SINE_RAM_v3_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May  8 15:53:35 2024...

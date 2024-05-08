@@ -2013,7 +2013,9 @@
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="aximm_rtl" spirit:version="1.0"/>
       <spirit:master>
-        <spirit:addressSpaceRef spirit:addressSpaceRef="Reg1"/>
+        <spirit:addressSpaceRef spirit:addressSpaceRef="Reg1">
+          <spirit:baseAddress spirit:format="long">0x00000000</spirit:baseAddress>
+        </spirit:addressSpaceRef>
       </spirit:master>
       <spirit:portMaps>
         <spirit:portMap>
@@ -4625,7 +4627,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2b723e46</spirit:value>
+            <spirit:value>9:6775841a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4639,11 +4641,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 08 04:24:24 UTC 2024</spirit:value>
+            <spirit:value>Wed May 08 19:58:28 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2b723e46</spirit:value>
+            <spirit:value>9:6775841a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4659,11 +4661,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 08 04:24:24 UTC 2024</spirit:value>
+            <spirit:value>Wed May 08 19:58:28 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2b723e46</spirit:value>
+            <spirit:value>9:6775841a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4694,7 +4696,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:52ef0e29</spirit:value>
+            <spirit:value>9:33b765b5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4710,11 +4712,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 08 04:24:24 UTC 2024</spirit:value>
+            <spirit:value>Wed May 08 19:58:28 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:52ef0e29</spirit:value>
+            <spirit:value>9:33b765b5</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4728,11 +4730,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed May 08 04:32:50 UTC 2024</spirit:value>
+            <spirit:value>Wed May 08 20:00:18 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2b723e46</spirit:value>
+            <spirit:value>9:6775841a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -10033,12 +10035,12 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ATG_MIF_DATA_DEPTH</spirit:name>
         <spirit:displayName>MIF File Depth</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ATG_MIF_DATA_DEPTH">16</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ATG_MIF_DATA_DEPTH">256</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ATG_MIF_ADDR_BITS</spirit:name>
         <spirit:displayName>MIF Addr Bits</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ATG_MIF_ADDR_BITS">4</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_ATG_MIF_ADDR_BITS">8</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_ATG_SYSTEM_CMD_MAX_RETRY</spirit:name>
@@ -10970,22 +10972,22 @@
     <spirit:parameter>
       <spirit:name>C_ATG_SYSTEM_INIT_DATA_MIF</spirit:name>
       <spirit:displayName>Data COE File</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_SYSTEM_INIT_DATA_MIF" spirit:order="1850">../../../../../../../Extras/data_sin.coe</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_SYSTEM_INIT_DATA_MIF" spirit:order="1850">../../../../../../../Extras/coe lite/data_sin.coe</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_ATG_SYSTEM_INIT_ADDR_MIF</spirit:name>
       <spirit:displayName>Address COE File</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_SYSTEM_INIT_ADDR_MIF" spirit:order="1750">../../../../../../../Extras/addr_sin.coe</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_SYSTEM_INIT_ADDR_MIF" spirit:order="1750">../../../../../../../Extras/coe lite/addr_sin.coe</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_ATG_SYSTEM_INIT_MASK_MIF</spirit:name>
       <spirit:displayName>Mask COE File</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_SYSTEM_INIT_MASK_MIF" spirit:order="1751">../../../../../../../Extras/mask_sin.coe</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_SYSTEM_INIT_MASK_MIF" spirit:order="1751">../../../../../../../Extras/coe lite/mask_sin.coe</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_ATG_SYSTEM_INIT_CTRL_MIF</spirit:name>
       <spirit:displayName>Control COE File</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_SYSTEM_INIT_CTRL_MIF" spirit:order="1752">../../../../../../../Extras/ctrl_sin.coe</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_SYSTEM_INIT_CTRL_MIF" spirit:order="1752">../../../../../../../Extras/coe lite/ctrl_sin.coe</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_AXIS1_HAS_TKEEP</spirit:name>
@@ -11084,7 +11086,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_ATG_MIF_DATA_DEPTH</spirit:name>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_MIF_DATA_DEPTH" spirit:choiceRef="choice_list_cd7079e5" spirit:order="2800">16</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_ATG_MIF_DATA_DEPTH" spirit:choiceRef="choice_list_cd7079e5" spirit:order="2800">256</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_ATG_STATIC_CH_SELECT</spirit:name>
@@ -11568,6 +11570,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.ATG_CLK_FREQ_MHZ" xilinx:valueSource="propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ATG_MIF_DATA_DEPTH" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ATG_MODE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ATG_SYSINIT_MODES" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ATG_SYSTEM_CMD_MAX_RETRY" xilinx:valueSource="user"/>

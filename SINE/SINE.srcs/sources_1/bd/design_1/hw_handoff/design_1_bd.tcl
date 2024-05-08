@@ -162,25 +162,28 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.PHASE {0.000} \
  ] $clock
-  set enable [ create_bd_port -dir I enable ]
   set reset [ create_bd_port -dir I -type rst reset ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_HIGH} \
  ] $reset
 
+  # Create instance: Dientes_de_sierra_0, and set properties
+  set Dientes_de_sierra_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:Dientes_de_sierra:2.3 Dientes_de_sierra_0 ]
+
   # Create instance: SINE_RAM_0, and set properties
-  set SINE_RAM_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:SINE_RAM:2.1 SINE_RAM_0 ]
+  set SINE_RAM_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:SINE_RAM:3 SINE_RAM_0 ]
 
   # Create instance: axi_traffic_gen_1, and set properties
   set axi_traffic_gen_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_traffic_gen:3.0 axi_traffic_gen_1 ]
   set_property -dict [ list \
+   CONFIG.C_ATG_MIF_DATA_DEPTH {256} \
    CONFIG.C_ATG_MODE {AXI4-Lite} \
    CONFIG.C_ATG_SYSINIT_MODES {System_Test} \
    CONFIG.C_ATG_SYSTEM_CMD_MAX_RETRY {2147483647} \
-   CONFIG.C_ATG_SYSTEM_INIT_ADDR_MIF {../../../../../../../Extras/addr_sin.coe} \
-   CONFIG.C_ATG_SYSTEM_INIT_CTRL_MIF {../../../../../../../Extras/ctrl_sin.coe} \
-   CONFIG.C_ATG_SYSTEM_INIT_DATA_MIF {../../../../../../../Extras/data_sin.coe} \
-   CONFIG.C_ATG_SYSTEM_INIT_MASK_MIF {../../../../../../../Extras/mask_sin.coe} \
+   CONFIG.C_ATG_SYSTEM_INIT_ADDR_MIF {../../../../../../../Extras/coe lite/addr_sin.coe} \
+   CONFIG.C_ATG_SYSTEM_INIT_CTRL_MIF {../../../../../../../Extras/coe lite/ctrl_sin.coe} \
+   CONFIG.C_ATG_SYSTEM_INIT_DATA_MIF {../../../../../../../Extras/coe lite/data_sin.coe} \
+   CONFIG.C_ATG_SYSTEM_INIT_MASK_MIF {../../../../../../../Extras/coe lite/mask_sin.coe} \
  ] $axi_traffic_gen_1
 
   # Create instance: clk_wiz, and set properties
@@ -197,6 +200,7 @@ proc create_root_design { parentCell } {
    CONFIG.C_MONITOR_TYPE {Native} \
    CONFIG.C_NUM_OF_PROBES {1} \
    CONFIG.C_PROBE0_WIDTH {8} \
+   CONFIG.C_PROBE1_WIDTH {1} \
  ] $ila_0
 
   # Create instance: rst_clk_wiz_100M, and set properties
@@ -206,10 +210,10 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net axi_traffic_gen_1_M_AXI_LITE_CH1 [get_bd_intf_pins SINE_RAM_0/S00_AXI] [get_bd_intf_pins axi_traffic_gen_1/M_AXI_LITE_CH1]
 
   # Create port connections
-  connect_bd_net -net SINE_RAM_0_sin_data [get_bd_pins SINE_RAM_0/sin_data] [get_bd_pins ila_0/probe0]
-  connect_bd_net -net clk_wiz_clk_out1 [get_bd_pins SINE_RAM_0/s00_axi_aclk] [get_bd_pins axi_traffic_gen_1/s_axi_aclk] [get_bd_pins clk_wiz/clk_out1] [get_bd_pins ila_0/clk] [get_bd_pins rst_clk_wiz_100M/slowest_sync_clk]
+  connect_bd_net -net Dientes_de_sierra_0_sierra [get_bd_pins Dientes_de_sierra_0/sierra] [get_bd_pins SINE_RAM_0/counter]
+  connect_bd_net -net SINE_RAM_0_seno [get_bd_pins SINE_RAM_0/seno] [get_bd_pins ila_0/probe0]
+  connect_bd_net -net clk_wiz_clk_out1 [get_bd_pins Dientes_de_sierra_0/clk_div] [get_bd_pins SINE_RAM_0/s00_axi_aclk] [get_bd_pins axi_traffic_gen_1/s_axi_aclk] [get_bd_pins clk_wiz/clk_out1] [get_bd_pins ila_0/clk] [get_bd_pins rst_clk_wiz_100M/slowest_sync_clk]
   connect_bd_net -net clk_wiz_locked [get_bd_pins clk_wiz/locked] [get_bd_pins rst_clk_wiz_100M/dcm_locked]
-  connect_bd_net -net enable_0_1 [get_bd_ports enable] [get_bd_pins SINE_RAM_0/enable]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset] [get_bd_pins clk_wiz/reset] [get_bd_pins rst_clk_wiz_100M/ext_reset_in]
   connect_bd_net -net rst_clk_wiz_100M_peripheral_aresetn [get_bd_pins SINE_RAM_0/s00_axi_aresetn] [get_bd_pins axi_traffic_gen_1/s_axi_aresetn] [get_bd_pins rst_clk_wiz_100M/peripheral_aresetn]
   connect_bd_net -net sys_clock_1 [get_bd_ports clock] [get_bd_pins clk_wiz/clk_in1]

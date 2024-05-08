@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Wed May  8 00:32:50 2024
+// Date        : Wed May  8 16:00:18 2024
 // Host        : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_axi_traffic_gen_1_0/design_1_axi_traffic_gen_1_0_stub.v

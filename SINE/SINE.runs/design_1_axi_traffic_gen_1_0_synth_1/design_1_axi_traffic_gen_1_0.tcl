@@ -70,6 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_axi_traffic_gen_1_0_synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -85,13 +88,16 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
-set_property ip_repo_paths c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores/SINE_RAM_1.0 [current_project]
+set_property ip_repo_paths {
+  c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores
+  c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores/SINE_RAM_1.0
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_axi_traffic_gen_1_0/design_1_axi_traffic_gen_1_0.xci
+read_ip -quiet C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_axi_traffic_gen_1_0/design_1_axi_traffic_gen_1_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_axi_traffic_gen_1_0/design_1_axi_traffic_gen_1_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }

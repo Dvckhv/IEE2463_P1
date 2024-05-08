@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x87BBFABCC06BA629",
+      "boundary_crc": "0x2BA339174A414B",
       "device": "xc7z010clg400-1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -14,6 +14,7 @@
       "ila_0": "",
       "clk_wiz": "",
       "rst_clk_wiz_100M": "",
+      "Dientes_de_sierra_0": "",
       "SINE_RAM_0": ""
     },
     "ports": {
@@ -53,9 +54,6 @@
             "value": "ACTIVE_HIGH"
           }
         }
-      },
-      "enable": {
-        "direction": "I"
       }
     },
     "components": {
@@ -63,6 +61,9 @@
         "vlnv": "xilinx.com:ip:axi_traffic_gen:3.0",
         "xci_name": "design_1_axi_traffic_gen_1_0",
         "parameters": {
+          "C_ATG_MIF_DATA_DEPTH": {
+            "value": "256"
+          },
           "C_ATG_MODE": {
             "value": "AXI4-Lite"
           },
@@ -73,16 +74,16 @@
             "value": "2147483647"
           },
           "C_ATG_SYSTEM_INIT_ADDR_MIF": {
-            "value": "../../../../../../../Extras/addr_sin.coe"
+            "value": "../../../../../../../Extras/coe lite/addr_sin.coe"
           },
           "C_ATG_SYSTEM_INIT_CTRL_MIF": {
-            "value": "../../../../../../../Extras/ctrl_sin.coe"
+            "value": "../../../../../../../Extras/coe lite/ctrl_sin.coe"
           },
           "C_ATG_SYSTEM_INIT_DATA_MIF": {
-            "value": "../../../../../../../Extras/data_sin.coe"
+            "value": "../../../../../../../Extras/coe lite/data_sin.coe"
           },
           "C_ATG_SYSTEM_INIT_MASK_MIF": {
-            "value": "../../../../../../../Extras/mask_sin.coe"
+            "value": "../../../../../../../Extras/coe lite/mask_sin.coe"
           }
         },
         "addressing": {
@@ -119,6 +120,9 @@
           },
           "C_PROBE0_WIDTH": {
             "value": "8"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "1"
           }
         }
       },
@@ -138,9 +142,13 @@
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
         "xci_name": "design_1_rst_clk_wiz_100M_0"
       },
+      "Dientes_de_sierra_0": {
+        "vlnv": "xilinx.com:user:Dientes_de_sierra:2.3",
+        "xci_name": "design_1_Dientes_de_sierra_0_0"
+      },
       "SINE_RAM_0": {
-        "vlnv": "xilinx.com:user:SINE_RAM:2.1",
-        "xci_name": "design_1_SINE_RAM_0_0"
+        "vlnv": "xilinx.com:user:SINE_RAM:3",
+        "xci_name": "design_1_SINE_RAM_0_1"
       }
     },
     "interface_nets": {
@@ -158,6 +166,7 @@
           "ila_0/clk",
           "axi_traffic_gen_1/s_axi_aclk",
           "rst_clk_wiz_100M/slowest_sync_clk",
+          "Dientes_de_sierra_0/clk_div",
           "SINE_RAM_0/s00_axi_aclk"
         ]
       },
@@ -187,16 +196,16 @@
           "rst_clk_wiz_100M/ext_reset_in"
         ]
       },
-      "SINE_RAM_0_sin_data": {
+      "SINE_RAM_0_seno": {
         "ports": [
-          "SINE_RAM_0/sin_data",
+          "SINE_RAM_0/seno",
           "ila_0/probe0"
         ]
       },
-      "enable_0_1": {
+      "Dientes_de_sierra_0_sierra": {
         "ports": [
-          "enable",
-          "SINE_RAM_0/enable"
+          "Dientes_de_sierra_0/sierra",
+          "SINE_RAM_0/counter"
         ]
       }
     },

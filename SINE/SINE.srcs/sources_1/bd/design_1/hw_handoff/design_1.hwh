@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May  8 00:27:12 2024" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed May  8 15:58:29 2024" VIVADOVERSION="2020.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-10:part0:1.2" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -15,34 +15,49 @@
         <CONNECTION INSTANCE="rst_clk_wiz_100M" PORT="ext_reset_in"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="SINE_RAM_0" PORT="enable"/>
-      </CONNECTIONS>
-    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="1" FULLNAME="/SINE_RAM_0" HWVERSION="2.1" INSTANCE="SINE_RAM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SINE_RAM" VLNV="xilinx.com:user:SINE_RAM:2.1">
+    <MODULE COREREVISION="1" FULLNAME="/Dientes_de_sierra_0" HWVERSION="2.3" INSTANCE="Dientes_de_sierra_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Dientes_de_sierra" VLNV="xilinx.com:user:Dientes_de_sierra:2.3">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_Dientes_de_sierra_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_div" SIGIS="undef" SIGNAME="clk_wiz_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="sierra" RIGHT="0" SIGIS="undef" SIGNAME="Dientes_de_sierra_0_sierra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SINE_RAM_0" PORT="counter"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/SINE_RAM_0" HWVERSION="3" INSTANCE="SINE_RAM_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SINE_RAM" VLNV="xilinx.com:user:SINE_RAM:3">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="10"/>
         <PARAMETER NAME="SIN_WIDTH" VALUE="8"/>
-        <PARAMETER NAME="Component_Name" VALUE="design_1_SINE_RAM_0_0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_SINE_RAM_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x44A00000"/>
         <PARAMETER NAME="C_S00_AXI_HIGHADDR" VALUE="0x44A0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="External_Ports_enable">
+        <PORT DIR="I" LEFT="7" NAME="counter" RIGHT="0" SIGIS="undef" SIGNAME="Dientes_de_sierra_0_sierra">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="enable"/>
+            <CONNECTION INSTANCE="Dientes_de_sierra_0" PORT="sierra"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="7" NAME="sin_data" RIGHT="0" SIGIS="undef" SIGNAME="SINE_RAM_0_sin_data">
+        <PORT DIR="O" LEFT="7" NAME="seno" RIGHT="0" SIGIS="undef" SIGNAME="SINE_RAM_0_seno">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_0" PORT="probe0"/>
           </CONNECTIONS>
@@ -264,8 +279,8 @@
         <PARAMETER NAME="C_ATG_SYSTEM_INIT_ADDR_MIF" VALUE="design_1_axi_traffic_gen_1_0_addr.mem"/>
         <PARAMETER NAME="C_ATG_SYSTEM_INIT_CTRL_MIF" VALUE="design_1_axi_traffic_gen_1_0_ctrl.mem"/>
         <PARAMETER NAME="C_ATG_SYSTEM_INIT_MASK_MIF" VALUE="design_1_axi_traffic_gen_1_0_mask.mem"/>
-        <PARAMETER NAME="C_ATG_MIF_DATA_DEPTH" VALUE="16"/>
-        <PARAMETER NAME="C_ATG_MIF_ADDR_BITS" VALUE="4"/>
+        <PARAMETER NAME="C_ATG_MIF_DATA_DEPTH" VALUE="256"/>
+        <PARAMETER NAME="C_ATG_MIF_ADDR_BITS" VALUE="8"/>
         <PARAMETER NAME="C_ATG_SYSTEM_CMD_MAX_RETRY" VALUE="2147483647"/>
         <PARAMETER NAME="C_ATG_SYSTEM_TEST_MAX_CLKS" VALUE="5000"/>
         <PARAMETER NAME="C_ATG_SYSTEM_MAX_CHANNELS" VALUE="&quot;00000000000000000000000000000001&quot;"/>
@@ -1107,6 +1122,7 @@
             <CONNECTION INSTANCE="ila_0" PORT="clk"/>
             <CONNECTION INSTANCE="axi_traffic_gen_1" PORT="s_axi_aclk"/>
             <CONNECTION INSTANCE="rst_clk_wiz_100M" PORT="slowest_sync_clk"/>
+            <CONNECTION INSTANCE="Dientes_de_sierra_0" PORT="clk_div"/>
             <CONNECTION INSTANCE="SINE_RAM_0" PORT="s00_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
@@ -4263,9 +4279,9 @@
             <CONNECTION INSTANCE="clk_wiz" PORT="clk_out1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="SINE_RAM_0_sin_data">
+        <PORT DIR="I" LEFT="7" NAME="probe0" RIGHT="0" SIGIS="undef" SIGNAME="SINE_RAM_0_seno">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="SINE_RAM_0" PORT="sin_data"/>
+            <CONNECTION INSTANCE="SINE_RAM_0" PORT="seno"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

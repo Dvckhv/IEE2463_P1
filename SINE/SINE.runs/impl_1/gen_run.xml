@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1715142718">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1715198312">
   <File Type="BITSTR-BMM" Name="design_1_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="design_1_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="design_1_wrapper_timing_summary_init.rpt"/>
@@ -90,25 +90,25 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Extras/data_sin.coe">
+    <File Path="$PPRDIR/../Extras/coe lite/data_sin.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Extras/addr_sin.coe">
+    <File Path="$PPRDIR/../Extras/coe lite/addr_sin.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Extras/mask_sin.coe">
+    <File Path="$PPRDIR/../Extras/coe lite/mask_sin.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Extras/ctrl_sin.coe">
+    <File Path="$PPRDIR/../Extras/coe lite/ctrl_sin.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -152,9 +152,9 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_SINE_RAM_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_traffic_gen_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_Dientes_de_sierra_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_SINE_RAM_0_1"/>
 </GenRun>

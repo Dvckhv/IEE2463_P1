@@ -287,8 +287,8 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_AXIS_DATA_GEN_TYPE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_BASIC_AXI4">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_HLTP_MODE">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_MIF_ADDR_BITS">4</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_MIF_DATA_DEPTH">16</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_MIF_ADDR_BITS">8</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_MIF_DATA_DEPTH">256</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_REPEAT_TYPE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_SLAVE_ONLY">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.C_ATG_STATIC">0</spirit:configurableElementValue>
@@ -375,7 +375,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ATG_VERSAL_400">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_RD_ADDR_SEED">0x5A5A</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.AXI_WR_ADDR_SEED">0x7C9B</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_MIF_DATA_DEPTH">16</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_MIF_DATA_DEPTH">256</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_MODE">AXI4-Lite</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_MODE_L2">Advanced</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_REPEAT_TYPE">One_Shot</spirit:configurableElementValue>
@@ -407,10 +407,10 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_CH5_HIGH">0x000004FF</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_CH5_LOW">0x00000400</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_CMD_MAX_RETRY">2147483647</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_INIT_ADDR_MIF">../../../../../../../Extras/addr_sin.coe</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_INIT_CTRL_MIF">../../../../../../../Extras/ctrl_sin.coe</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_INIT_DATA_MIF">../../../../../../../Extras/data_sin.coe</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_INIT_MASK_MIF">../../../../../../../Extras/mask_sin.coe</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_INIT_ADDR_MIF">../../../../../../../Extras/coe lite/addr_sin.coe</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_INIT_CTRL_MIF">../../../../../../../Extras/coe lite/ctrl_sin.coe</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_INIT_DATA_MIF">../../../../../../../Extras/coe lite/data_sin.coe</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_INIT_MASK_MIF">../../../../../../../Extras/coe lite/mask_sin.coe</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_MAX_CHANNELS">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_ATG_SYSTEM_TEST_MAX_CLKS">5000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.C_AXIS1_HAS_TKEEP">true</spirit:configurableElementValue>
@@ -594,6 +594,7 @@
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.WUSER_BITS_PER_BYTE" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.ATG_CLK_FREQ_MHZ" xilinx:valueSource="propagated"/>
+            <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ATG_MIF_DATA_DEPTH" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ATG_MODE" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ATG_SYSINIT_MODES" xilinx:valueSource="user"/>
             <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_ATG_SYSTEM_CMD_MAX_RETRY" xilinx:valueSource="user"/>

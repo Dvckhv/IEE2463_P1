@@ -70,6 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -83,16 +86,19 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
-set_property ip_repo_paths c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores/SINE_RAM_1.0 [current_project]
+set_property ip_repo_paths {
+  c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores
+  c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores/SINE_RAM_1.0
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Extras/data_sin.coe
-add_files c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Extras/addr_sin.coe
-add_files c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Extras/mask_sin.coe
-add_files c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Extras/ctrl_sin.coe
+add_files {{C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Extras/coe lite/data_sin.coe}}
+add_files {{C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Extras/coe lite/addr_sin.coe}}
+add_files {{C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Extras/coe lite/mask_sin.coe}}
+add_files {{C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Extras/coe lite/ctrl_sin.coe}}
 read_vhdl -library xil_defaultlib C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 add_files C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_axi_traffic_gen_1_0/design_1_axi_traffic_gen_1_0_ooc.xdc]

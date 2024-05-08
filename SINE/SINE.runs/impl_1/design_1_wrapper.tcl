@@ -121,7 +121,9 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
   set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
@@ -131,7 +133,10 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.cache/wt [current_project]
   set_property parent.project_path C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.xpr [current_project]
-  set_property ip_repo_paths c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores/SINE_RAM_1.0 [current_project]
+  set_property ip_repo_paths {
+  C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores
+  C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores/SINE_RAM_1.0
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
