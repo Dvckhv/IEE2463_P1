@@ -1,0 +1,253 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x964C2DD6C5ED03B5",
+      "device": "xc7z010iclg225-1L",
+      "name": "Proyecto_1_sep",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vio_0": "",
+      "vio_1": "",
+      "Sel_frec_0": "",
+      "Sel_funcion_0": "",
+      "Math_0": "",
+      "ila_0": "",
+      "generador_f_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Proyecto_1_sep_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "btn": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "sel": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "Proyecto_1_sep_vio_0_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "3"
+          },
+          "C_PROBE_IN0_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE_IN2_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE_OUT2_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "vio_1": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "Proyecto_1_sep_vio_1_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "0"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "Sel_frec_0": {
+        "vlnv": "xilinx.com:user:Sel_frec:1.0",
+        "xci_name": "Proyecto_1_sep_Sel_frec_0_0"
+      },
+      "Sel_funcion_0": {
+        "vlnv": "xilinx.com:user:Sel_funcion:1.4",
+        "xci_name": "Proyecto_1_sep_Sel_funcion_0_0"
+      },
+      "Math_0": {
+        "vlnv": "xilinx.com:user:Math:1.4",
+        "xci_name": "Proyecto_1_sep_Math_0_0"
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "Proyecto_1_sep_ila_0_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "7"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE2_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "generador_f_0": {
+        "vlnv": "xilinx.com:user:generador_f:1.0",
+        "xci_name": "Proyecto_1_sep_generador_f_0_0"
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "vio_0/clk",
+          "vio_1/clk",
+          "Sel_frec_0/clk",
+          "ila_0/clk"
+        ]
+      },
+      "vio_1_probe_out0": {
+        "ports": [
+          "vio_1/probe_out0",
+          "Sel_frec_0/sw"
+        ]
+      },
+      "Sel_frec_0_clk_div": {
+        "ports": [
+          "Sel_frec_0/clk_div",
+          "Sel_funcion_0/clk_div",
+          "Math_0/clk_div",
+          "generador_f_0/clk_div"
+        ]
+      },
+      "Dientes_de_sierra_0_sierra": {
+        "ports": [
+          "generador_f_0/sierra_o",
+          "Sel_funcion_0/sierra",
+          "ila_0/probe3"
+        ]
+      },
+      "RAM_test_0_seno": {
+        "ports": [
+          "generador_f_0/seno_o",
+          "Sel_funcion_0/seno",
+          "ila_0/probe0"
+        ]
+      },
+      "comp_cuadrada_0_cuadrada": {
+        "ports": [
+          "generador_f_0/cuadrada_o",
+          "Sel_funcion_0/cuadrada",
+          "ila_0/probe1"
+        ]
+      },
+      "Triangular_0_triangulada": {
+        "ports": [
+          "generador_f_0/triangulada_o",
+          "Sel_funcion_0/triangulada",
+          "ila_0/probe2"
+        ]
+      },
+      "btn_0_1": {
+        "ports": [
+          "btn",
+          "Sel_funcion_0/btn"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "Sel_funcion_0/reset"
+        ]
+      },
+      "Sel_funcion_0_funcion_a": {
+        "ports": [
+          "Sel_funcion_0/funcion_a",
+          "Math_0/funcion_a",
+          "ila_0/probe4"
+        ]
+      },
+      "Sel_funcion_0_funcion_b": {
+        "ports": [
+          "Sel_funcion_0/funcion_b",
+          "Math_0/funcion_b",
+          "ila_0/probe5"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "Math_0/cte"
+        ]
+      },
+      "sel_0_1": {
+        "ports": [
+          "sel",
+          "Math_0/sel"
+        ]
+      },
+      "Math_0_f_out": {
+        "ports": [
+          "Math_0/f_out",
+          "ila_0/probe6"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "generador_f_0/referencia"
+        ]
+      }
+    }
+  }
+}
