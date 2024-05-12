@@ -1,0 +1,455 @@
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/debug_ip_core.tcl
+# set_param project.singleFileAddWarning.threshold 0
+# set_param chipscope.maxJobs 4
+# set_param synth.enableIncremental 0
+# set_param chipscope.flow 0
+# set script_paths c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dbg_hub_CV.0/out/get_cs_ip.tcl
+# foreach script_path $script_paths { 
+#     source $script_path
+#     lappend debug_ip_vlnv $ip_vlnv 
+#     lappend debug_ip_module_name $ip_module_name
+#     lappend debug_params $params
+#     lappend debug_intf_params $intf_params
+#     lappend debug_connectivity $connectivity
+#     lappend debug_output_xci $output_xci
+#     lappend debug_output_dcp $output_dcp
+#     lappend debug_output_dir $output_dir
+#     lappend debug_synth_opts $synth_opts
+#     lappend debug_xdc_files $xdc_files
+# }
+## set_param project.singleFileAddWarning.threshold 0
+## set_param chipscope.maxJobs 4
+## set_param synth.enableIncremental 0
+## set_param chipscope.flow 0
+## set part xc7z010clg400-1
+## set board_part_repo_paths {}
+## set board_part digilentinc.com:zybo-z7-10:part0:1.2
+## set board_connections {}
+## set tool_flow Vivado
+## set ip_vlnv xilinx.com:ip:xsdbm:3.0
+## set ip_module_name dbg_hub
+## set params {{{PARAM_VALUE.C_BSCAN_MODE} {false} {PARAM_VALUE.C_BSCAN_MODE_WITH_CORE} {false} {PARAM_VALUE.C_CLK_INPUT_FREQ_HZ} {300000000} {PARAM_VALUE.C_ENABLE_CLK_DIVIDER} {false} {PARAM_VALUE.C_EN_BSCANID_VEC} {false} {PARAM_VALUE.C_NUM_BSCAN_MASTER_PORTS} {0} {PARAM_VALUE.C_TWO_PRIM_MODE} {false} {PARAM_VALUE.C_USER_SCAN_CHAIN} {1} {PARAM_VALUE.C_USE_EXT_BSCAN} {false} {PARAM_VALUE.C_XSDB_NUM_SLAVES} {4}}}
+## set intf_params {}
+## set connectivity {}
+## set output_xci c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dbg_hub_CV.0/out/result.xci
+## set output_dcp c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dbg_hub_CV.0/out/result.dcp
+## set output_dir c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dbg_hub_CV.0/out
+## set ip_repo_paths C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores
+## set ip_output_repo C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.cache/ip
+## set ip_cache_permissions {read write}
+## set oopbus_ip_repo_paths [get_param chipscope.oopbus_ip_repo_paths]
+## set synth_opts {}
+## set xdc_files {}
+# set debug_ip_repo_paths $ip_repo_paths
+# set debug_ip_output_repo $ip_output_repo
+# set debug_ip_cache_permissions $ip_cache_permissions
+# set debug_oopbus_ip_repo_paths [get_param chipscope.oopbus_ip_repo_paths]
+# set ordering_constrs 1
+# set jobs 4
+# source {C:/Xilinx/Vivado/2020.1/scripts/ip/ipxchipscope.tcl}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+IP SYNTH XDC FILES = 
+
+c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/dbg_hub.xci
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dbg_hub'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dbg_hub'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dbg_hub'...
+generation completed successfully
+Succeeded copying xdc_files
+Succeeded copying xci files
+created run dbg_hub_synth_1
+launching all runs dbg_hub_synth_1
+
+[Sat May 11 23:14:57 2024] Launched dbg_hub_synth_1...
+Run output will be captured here: c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/runme.log
+INFO: [InternalPartition_RunlogStart-1] dbg_hub
+[Sat May 11 23:14:57 2024] Waiting for dbg_hub_synth_1 to finish...
+
+*** Running vivado
+    with args -log dbg_hub.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dbg_hub.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source dbg_hub.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/IP_Cores'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.cache/ip 
+Command: synth_design -top dbg_hub -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32188
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1062.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dbg_hub' [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/synth/dbg_hub.v:58]
+INFO: [Synth 8-6157] synthesizing module 'BSCANE2' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:884]
+INFO: [Synth 8-6155] done synthesizing module 'BSCANE2' (1#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:884]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'dbg_hub' (51#1) [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/synth/dbg_hub.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1166.348 ; gain = 104.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1166.348 ; gain = 104.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1166.348 ; gain = 104.207
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.075 . Memory (MB): peak = 1166.348 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/dbg_hub_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/dbg_hub_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/constraints/xsdbm_cc_early.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/constraints/xsdbm_cc_early.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/constraints/xsdbm_cc_late.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/constraints/xsdbm_cc_late.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/constraints/xsdbm_cc_late.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dbg_hub_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dbg_hub_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/constraints/xsdbm_gc_late.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/constraints/xsdbm_gc_late.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1188.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1195.484 ; gain = 6.914
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'id_state_reg' in module 'xsdbm_v3_0_0_bscan_switch'
+INFO: [Synth 8-802] inferred FSM for state register 'SWITCH_N_EXT_BSCAN.id_state_reg' in module 'xsdbm_v3_0_0_xsdbm_id'
+INFO: [Synth 8-6159] Found Keep on FSM register 'id_state_reg' in module 'xsdbm_v3_0_0_bscan_switch', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'SWITCH_N_EXT_BSCAN.id_state_reg' in module 'xsdbm_v3_0_0_xsdbm_id', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                               00 |                               00
+                 iSTATE0 |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 44    
++---XORs : 
+	                4 Bit    Wide XORs := 4     
+	                3 Bit    Wide XORs := 4     
+	                2 Bit    Wide XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               28 Bit    Registers := 2     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 37    
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 14    
+	                1 Bit    Registers := 99    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 10    
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 5     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 9     
+	   3 Input    4 Bit        Muxes := 1     
+	  20 Input    4 Bit        Muxes := 5     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 10    
+	   5 Input    2 Bit        Muxes := 1     
+	  20 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 44    
+	   3 Input    1 Bit        Muxes := 2     
+	  16 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+	  20 Input    1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++----------------------+-----------------------------------------------------------+---------------+----------------+
+|Module Name           | RTL Object                                                | Depth x Width | Implemented As | 
++----------------------+-----------------------------------------------------------+---------------+----------------+
+|xsdbm_v3_0_0_bus_ctl  | auto_sl_drdy                                              | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | auto_sl_drdy                                              | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | inc_addr_r                                                | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | inc_addr_r                                                | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | dec_wdc_r                                                 | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | dec_wdc_r                                                 | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | sl_den_r                                                  | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | sl_dwe_r                                                  | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | sl_rdmux_sel_r                                            | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | sl_berr_r                                                 | 32x1          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | ma_err_r                                                  | 32x2          | LUT            | 
+|xsdbm_v3_0_0_bus_ctl  | timer_rst                                                 | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_err_r       | 32x2          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_berr_r      | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/auto_sl_drdy   | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/auto_sl_drdy   | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/inc_addr_r     | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/inc_addr_r     | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/dec_wdc_r      | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/dec_wdc_r      | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r       | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r       | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/timer_rst      | 32x1          | LUT            | 
+|xsdbm_v3_0_0_xsdbm_id | CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_rdmux_sel_r | 32x1          | LUT            | 
++----------------------+-----------------------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name                                                                                                                 | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives  | 
++----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|inst/\BSCANID.u_xsdbm_id /\CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 16              | RAM32M x 3	 | 
+|inst/\BSCANID.u_xsdbm_id /\CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 16              | RAM32M x 3	 | 
++----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|Module Name                                                                                                                 | RTL Object                                                                    | Inference      | Size (Depth x Width) | Primitives  | 
++----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+|inst/\BSCANID.u_xsdbm_id /\CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 16              | RAM32M x 3	 | 
+|inst/\BSCANID.u_xsdbm_id /\CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst  | inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 16 x 16              | RAM32M x 3	 | 
++----------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------+----------------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin UPDATE_temp_i_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin RUNTEST_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin TCK_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin TMS_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BSCANE2 |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |    12|
+|4     |LUT1    |    27|
+|5     |LUT2    |    97|
+|6     |LUT3    |   105|
+|7     |LUT4    |   132|
+|8     |LUT5    |    89|
+|9     |LUT6    |    96|
+|10    |RAM32M  |     6|
+|11    |FDCE    |   188|
+|12    |FDPE    |    40|
+|13    |FDRE    |   524|
+|14    |FDSE    |    10|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1195.484 ; gain = 133.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:31 . Memory (MB): peak = 1195.484 ; gain = 104.207
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:33 . Memory (MB): peak = 1195.484 ; gain = 133.344
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1195.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1195.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 1195.617 ; gain = 133.477
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/dbg_hub.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP dbg_hub, cache-ID = 9341377313a55c87
+INFO: [Coretcl 2-1174] Renamed 79 cell refs.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/dbg_hub.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Sat May 11 23:15:46 2024...
+[Sat May 11 23:15:48 2024] dbg_hub_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:50 . Memory (MB): peak = 1063.070 ; gain = 0.000
+INFO: [InternalPartition_RunlogEnd-1] dbg_hub
+synth_opts = 
+ip = dbg_hub
+# set failed [catch {ipx::chipscope::run_multi_gen_and_synth_ip_core $part $board_part $board_connections $board_part_repo_paths $tool_flow $debug_ip_vlnv $debug_ip_module_name $debug_params $debug_output_xci $debug_output_dcp $debug_output_dir $debug_ip_repo_paths $debug_ip_output_repo $debug_ip_cache_permissions $debug_oopbus_ip_repo_paths $debug_synth_opts $debug_xdc_files $ordering_constrs $jobs} errMessage]
+# if { $failed } {
+# send_msg_id {IP_Flow 19-3805} ERROR "Failed to generate and synthesize debug IPs. \n $errMessage"
+#   exit 1
+# }
+INFO: [Common 17-206] Exiting Vivado at Sat May 11 23:15:48 2024...

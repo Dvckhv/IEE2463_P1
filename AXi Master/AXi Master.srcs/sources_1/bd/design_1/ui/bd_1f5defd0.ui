@@ -1,0 +1,37 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"197,-226",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clock -pg 1 -lvl 0 -x -30 -y 160 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -30 -y 80 -defaultsOSRD
+preplace inst axi_traffic_gen_0 -pg 1 -lvl 3 -x 730 -y 120 -defaultsOSRD -pinY M_AXI_LITE_CH1 0R -pinY s_axi_aclk 0L -pinY s_axi_aresetn 20L -pinY done 20R -pinBusY status 40R
+preplace inst axi_traffic_gen_1 -pg 1 -lvl 5 -x 1290 -y 150 -defaultsOSRD -pinY S_AXI 0L -pinY M_AXI 0R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L -pinY core_ext_start 60L -pinY irq_out 20R -pinY err_out 40R
+preplace inst clk_wiz -pg 1 -lvl 1 -x 110 -y 150 -defaultsOSRD -pinY reset 0L -pinY clk_in1 20L -pinY clk_out1 0R -pinY locked 30R
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 400 -y 100 -swap {2 0 1 3 4 5 6 8 9 7} -defaultsOSRD -pinY slowest_sync_clk 40L -pinY ext_reset_in 0L -pinY aux_reset_in 20L -pinY mb_debug_sys_rst 60L -pinY dcm_locked 80L -pinY mb_reset 0R -pinBusY bus_struct_reset 20R -pinBusY peripheral_reset 60R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 40R
+preplace inst axi_smc_1 -pg 1 -lvl 4 -x 1020 -y 120 -defaultsOSRD -pinY S00_AXI 0L -pinY M00_AXI 30R -pinY aclk 20L -pinY aresetn 40L
+preplace inst axi_smc -pg 1 -lvl 6 -x 1560 -y 150 -defaultsOSRD -pinY S00_AXI 0L -pinY M00_AXI 0R -pinY aclk 20L -pinY aresetn 40L
+preplace inst ila_1 -pg 1 -lvl 8 -x 2090 -y 70 -defaultsOSRD -pinY clk 0L -pinBusY probe0 200L
+preplace inst ila_0 -pg 1 -lvl 7 -x 1860 -y 130 -defaultsOSRD -pinY SLOT_0_AXI 20L -pinY clk 40L
+preplace inst RAM_FREC_0 -pg 1 -lvl 7 -x 1860 -y 270 -defaultsOSRD -pinY S00_AXI 0L -pinBusY divisor 0R -pinY s00_axi_aclk 20L -pinY s00_axi_aresetn 40L
+preplace netloc clk_wiz_clk_out1 1 1 7 220 0 570 20 890 20 1170 40 1420 60 1730 60 1980
+preplace netloc clk_wiz_locked 1 1 1 N 180
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 2 5 590 40 870 40 1150 60 1400 250 1690J
+preplace netloc sys_clock_1 1 0 1 -10J 160n
+preplace netloc reset_rtl_1 1 0 2 10 80 200J
+preplace netloc RAM_FREC_0_divisor 1 7 1 N 270
+preplace netloc axi_smc_M00_AXI 1 6 1 1710 150n
+preplace netloc axi_traffic_gen_1_M_AXI 1 5 1 N 150
+preplace netloc axi_smc_1_M00_AXI 1 4 1 N 150
+preplace netloc axi_traffic_gen_0_M_AXI_LITE_CH1 1 3 1 N 120
+levelinfo -pg 1 -30 110 400 730 1020 1290 1560 1860 2090 2220
+pagesize -pg 1 -db -bbox -sgen -120 -140 2220 480
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_board_cnt":"3",
+   "da_clkrst_cnt":"5"
+}

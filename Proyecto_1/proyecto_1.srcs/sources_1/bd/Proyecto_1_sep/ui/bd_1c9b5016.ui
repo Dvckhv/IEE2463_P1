@@ -1,37 +1,75 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.607018",
-   "Default View_TopLeft":"-186,0",
+   "Color Coded_ScaleFactor":"0.468052",
+   "Color Coded_TopLeft":"-96,-555",
+   "Default View_Layers":"/rst_clk_100M_peripheral_aresetn:true|/clk_1:true|/clk_wiz_clk_out1:true|",
+   "Default View_Layout":"",
+   "Default View_ScaleFactor":"0.412775",
+   "Default View_TopLeft":"-107,-422",
+   "Display-PortTypeClock":"true",
+   "Display-PortTypeOthers":"true",
+   "Display-PortTypeReset":"true",
    "ExpandedHierarchyInLayout":"",
+   "Grouping and No Loops_ScaleFactor":"0.492874",
+   "Grouping and No Loops_TopLeft":"-97,-424",
+   "Interfaces View_Layers":"/rst_clk_100M_peripheral_aresetn:false|/clk_1:false|/clk_wiz_clk_out1:false|",
+   "Interfaces View_ScaleFactor":"0.747236",
+   "Interfaces View_TopLeft":"0,-479",
+   "Reduced Jogs_Layers":"/rst_clk_100M_peripheral_aresetn:true|/clk_1:true|/clk_wiz_clk_out1:true|",
+   "Reduced Jogs_ScaleFactor":"0.462232",
+   "Reduced Jogs_TopLeft":"-97,-478",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clk -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
-preplace portBus btn -pg 1 -lvl 0 -x 0 -y 60 -defaultsOSRD
-preplace portBus sel -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
-preplace inst vio_0 -pg 1 -lvl 2 -x 320 -y 330 -defaultsOSRD
-preplace inst vio_1 -pg 1 -lvl 1 -x 120 -y 190 -defaultsOSRD
-preplace inst Sel_frec_0 -pg 1 -lvl 2 -x 320 -y 180 -defaultsOSRD
-preplace inst Sel_funcion_0 -pg 1 -lvl 4 -x 890 -y 130 -defaultsOSRD
-preplace inst Math_0 -pg 1 -lvl 5 -x 1160 -y 470 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 6 -x 1370 -y 320 -defaultsOSRD
-preplace inst generador_f_0 -pg 1 -lvl 3 -x 570 -y 150 -defaultsOSRD
-preplace netloc clk_0_1 1 0 6 20 130 220 250 NJ 250 NJ 250 NJ 250 NJ
-preplace netloc vio_1_probe_out0 1 1 1 NJ 190
-preplace netloc Sel_frec_0_clk_div 1 2 3 420 240 720 430 NJ
-preplace netloc Dientes_de_sierra_0_sierra 1 3 3 760 330 NJ 330 NJ
-preplace netloc RAM_test_0_seno 1 3 3 710 10 NJ 10 1280
-preplace netloc comp_cuadrada_0_cuadrada 1 3 3 740 290 NJ 290 NJ
-preplace netloc Triangular_0_triangulada 1 3 3 750 310 NJ 310 NJ
-preplace netloc btn_0_1 1 0 4 NJ 60 NJ 60 NJ 60 730J
-preplace netloc vio_0_probe_out1 1 2 2 NJ 330 730
-preplace netloc Sel_funcion_0_funcion_a 1 4 2 1040 350 NJ
-preplace netloc Sel_funcion_0_funcion_b 1 4 2 1030 370 NJ
-preplace netloc vio_0_probe_out2 1 2 3 NJ 350 NJ 350 1020
-preplace netloc sel_0_1 1 0 5 NJ 510 NJ 510 NJ 510 NJ 510 NJ
-preplace netloc Math_0_f_out 1 5 1 1280 390n
-preplace netloc vio_0_probe_out0 1 2 1 430 160n
-levelinfo -pg 1 0 120 320 570 890 1160 1370 1470
-pagesize -pg 1 -db -bbox -sgen -100 0 1470 570
+preplace port clk -pg 1 -lvl 0:w -x 20 -y 1040 -defaultsOSRD -bot
+preplace port sys_clock -pg 1 -lvl 0 -x 0 -y 510 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 11:w -x 2960 -y 100 -defaultsOSRD -top
+preplace portBus sel -pg 1 -lvl 12:w -x 3220 -y 100 -defaultsOSRD -top
+preplace inst Math_0 -pg 1 -lvl 13 -x 3320 -y 510 -swap {2 1 3 0 4} -defaultsOSRD -pinBusY group_1 40L -pinY clk_div 20L -pinBusY cte 60L -pinBusY sel 0L -pinBusY f_out 0R
+preplace inst RAM_FREC_0 -pg 1 -lvl 8 -x 1940 -y 310 -defaultsOSRD -pinY S00_AXI 0L -pinBusY divisor 40R -pinY s00_axi_aclk 20L -pinY s00_axi_aresetn 40L
+preplace inst SINE_RAM_0 -pg 1 -lvl 11 -x 2840 -y 510 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 23 21 20 22} -defaultsOSRD -pinY S00_AXI 0L -pinBusY counter 180L -pinBusY seno 120R -pinY s00_axi_aclk 20L -pinY s00_axi_aresetn 40L
+preplace inst Sel_frec_0 -pg 1 -lvl 9 -x 2220 -y 330 -defaultsOSRD -pinY clk 0L -pinBusY sw 20L -pinY clk_div 20R
+preplace inst Sel_funcion_0 -pg 1 -lvl 12 -x 3100 -y 690 -swap {0 4 2 3 5 1 6} -defaultsOSRD -pinBusY group_1 0R -pinBusY group_2 60L -pinY clk_div 20L -pinBusY seno 40L -pinBusY sierra 80L -pinBusY btn 0L -pinY reset 100L
+preplace inst axi_traffic_gen_0 -pg 1 -lvl 4 -x 920 -y 250 -defaultsOSRD -pinY M_AXI_LITE_CH1 0R -pinY s_axi_aclk 0L -pinY s_axi_aresetn 40L -pinY done 20R -pinBusY status 40R
+preplace inst axi_traffic_gen_1 -pg 1 -lvl 6 -x 1430 -y 250 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 76 75 77 78} -defaultsOSRD -pinY S_AXI 0L -pinY M_AXI 0R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 60L -pinY core_ext_start 40L -pinY irq_out 20R -pinY err_out 40R
+preplace inst axi_traffic_gen_2 -pg 1 -lvl 9 -x 2220 -y 170 -defaultsOSRD -pinY M_AXI_LITE_CH1 0R -pinY s_axi_aclk 20L -pinY s_axi_aresetn 40L -pinY done 20R -pinBusY status 40R
+preplace inst clk_wiz -pg 1 -lvl 2 -x 330 -y 510 -swap {1 0 2 3} -defaultsOSRD -pinY reset 20L -pinY clk_in1 0L -pinY clk_out1 0R -pinY locked 20R
+preplace inst generador_f_0 -pg 1 -lvl 10 -x 2560 -y 950 -defaultsOSRD -pinBusY group_1 0R -pinY clk_div 0L -pinBusY referencia 20L -pinBusY sierra_o 20R
+preplace inst ila_0 -pg 1 -lvl 14 -x 3510 -y 430 -swap {1 4 0 3 5 2} -defaultsOSRD -pinBusY group_1 20L -pinBusY group_2 420L -pinY clk 0L -pinBusY probe0 200L -pinBusY probe3 440L -pinBusY probe6 80L
+preplace inst rst_clk_100M -pg 1 -lvl 3 -x 610 -y 290 -swap {4 3 0 1 2 5 6 7 9 8} -defaultsOSRD -pinY slowest_sync_clk 80L -pinY ext_reset_in 60L -pinY aux_reset_in 0L -pinY mb_debug_sys_rst 20L -pinY dcm_locked 40L -pinY mb_reset 0R -pinBusY bus_struct_reset 20R -pinBusY peripheral_reset 40R -pinBusY interconnect_aresetn 80R -pinBusY peripheral_aresetn 60R
+preplace inst vio_0 -pg 1 -lvl 1 -x 120 -y 590 -swap {0 2 1 3} -defaultsOSRD -pinY clk 0L -pinBusY probe_out0 280R -pinBusY probe_out1 0R -pinBusY probe_out2 300R
+preplace inst axi_smc_1 -pg 1 -lvl 7 -x 1670 -y 250 -defaultsOSRD -pinY S00_AXI 0L -pinY M00_AXI 0R -pinY aclk 20L -pinY aresetn 60L
+preplace inst axi_traffic_gen_2_axi_periph -pg 1 -lvl 10 -x 2560 -y 170 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 41 39 42 40 43} -defaultsOSRD -pinY S00_AXI 0L -pinY M00_AXI 180R -pinY ACLK 100L -pinY ARESETN 160L -pinY S00_ACLK 120L -pinY S00_ARESETN 180L -pinY M00_ACLK 140L -pinY M00_ARESETN 200L
+preplace inst axi_smc -pg 1 -lvl 5 -x 1190 -y 250 -defaultsOSRD -pinY S00_AXI 0L -pinY M00_AXI 0R -pinY aclk 20L -pinY aresetn 40L
+preplace inst ila_1 -pg 1 -lvl 8 -x 1940 -y 170 -defaultsOSRD -pinY SLOT_0_AXI 0L -pinY clk 20L
+preplace inst ila_2 -pg 1 -lvl 11 -x 2840 -y 350 -defaultsOSRD -pinY SLOT_0_AXI 0L -pinY clk 20L
+preplace netloc netgroup_1 1 12 2 3200 450 N
+preplace netloc netgroup_2 1 10 4 2720 750 3000 850 NJ 850 N
+preplace netloc Sel_frec_0_clk_div 1 9 4 2380 450 NJ 450 2980 530 NJ
+preplace netloc Dientes_de_sierra_0_sierra 1 10 4 2700 770 2960 870 NJ 870 N
+preplace netloc RAM_test_0_seno 1 11 3 3000 630 NJ 630 N
+preplace netloc btn_0_1 1 11 1 2960 100n
+preplace netloc vio_0_probe_out2 1 1 12 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 NJ 890 3220
+preplace netloc sel_0_1 1 12 1 3220 100n
+preplace netloc Math_0_f_out 1 13 1 N 510
+preplace netloc vio_0_probe_out0 1 1 9 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 2360
+preplace netloc RAM_FREC_0_divisor 1 8 1 N 350
+preplace netloc rst_clk_100M_peripheral_aresetn 1 3 8 780 350 1060 350 1320 370 1540 370 1800 410 2080 410 2420 550 NJ
+preplace netloc vio_0_probe_out1 1 1 11 240 450 440 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ 790 NJ
+preplace netloc clk_wiz_clk_out1 1 2 9 420 230 780 190 1060 190 1320 190 1540 190 1820 250 2060 270 2400 470 2720
+preplace netloc sys_clock_1 1 0 2 NJ 510 NJ
+preplace netloc clk_1 1 0 14 20 530 220 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc axi_traffic_gen_0_M_AXI_LITE_CH1 1 4 1 N 250
+preplace netloc axi_smc_M00_AXI 1 5 1 N 250
+preplace netloc axi_traffic_gen_2_M_AXI_LITE_CH1 1 9 1 N 170
+preplace netloc axi_traffic_gen_2_axi_periph_M00_AXI 1 10 1 2700 350n
+preplace netloc axi_traffic_gen_1_M_AXI 1 6 1 N 250
+preplace netloc axi_smc_1_M00_AXI 1 7 1 1800 170n
+levelinfo -pg 1 0 120 330 610 920 1190 1430 1670 1940 2220 2560 2840 3100 3320 3510 3600
+pagesize -pg 1 -db -bbox -sgen -110 0 3600 1110
 "
 }
-
+{
+   "da_axi4_cnt":"21",
+   "da_board_cnt":"6",
+   "da_clkrst_cnt":"35"
+}

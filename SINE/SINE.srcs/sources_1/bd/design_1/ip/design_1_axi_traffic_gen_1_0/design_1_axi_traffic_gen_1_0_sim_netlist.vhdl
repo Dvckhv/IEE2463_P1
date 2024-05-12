@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Wed May  8 16:00:18 2024
+-- Date        : Wed May  8 16:00:17 2024
 -- Host        : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_axi_traffic_gen_1_0/design_1_axi_traffic_gen_1_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_axi_traffic_gen_1_0 -prefix
+--               design_1_axi_traffic_gen_1_0_ design_1_axi_traffic_gen_1_0_sim_netlist.vhdl
 -- Design      : design_1_axi_traffic_gen_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,6 @@ entity design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_asynch_rst_ff is
     reset : in STD_LOGIC;
     q : out STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_asynch_rst_ff : entity is "axi_traffic_gen_v3_0_7_asynch_rst_ff";
   attribute dont_touch : string;
   attribute dont_touch of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_asynch_rst_ff : entity is "true";
 end design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_asynch_rst_ff;
@@ -226,8 +224,6 @@ entity design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_mrdwr is
     \wdata_m_reg[31]_0\ : in STD_LOGIC_VECTOR ( 31 downto 0 );
     \ATG_SYSTEST_NXT_PTR.nxt_rom_ptr_reg[7]_0\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_mrdwr : entity is "axi_traffic_gen_v3_0_7_systeminit_mrdwr";
 end design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_mrdwr;
 
 architecture STRUCTURE of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_mrdwr is
@@ -5330,8 +5326,6 @@ entity design_1_axi_traffic_gen_1_0_xpm_memory_base is
   attribute MESSAGE_CONTROL of design_1_axi_traffic_gen_1_0_xpm_memory_base : entity is 0;
   attribute NUM_CHAR_LOC : integer;
   attribute NUM_CHAR_LOC of design_1_axi_traffic_gen_1_0_xpm_memory_base : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_traffic_gen_1_0_xpm_memory_base : entity is "xpm_memory_base";
   attribute P_ECC_MODE : string;
   attribute P_ECC_MODE of design_1_axi_traffic_gen_1_0_xpm_memory_base : entity is "no_ecc";
   attribute P_ENABLE_BYTE_WRITE_A : integer;
@@ -9705,8 +9699,6 @@ entity design_1_axi_traffic_gen_1_0_xpm_memory_spram is
     cur_trn_status_reg_1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     cur_trn_status_reg_2 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_traffic_gen_1_0_xpm_memory_spram : entity is "xpm_memory_spram";
 end design_1_axi_traffic_gen_1_0_xpm_memory_spram;
 
 architecture STRUCTURE of design_1_axi_traffic_gen_1_0_xpm_memory_spram is
@@ -11851,8 +11843,6 @@ entity design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_dmg is
     cur_trn_status_reg_1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     cur_trn_status_reg_2 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_dmg : entity is "axi_traffic_gen_v3_0_7_systeminit_dmg";
 end design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_dmg;
 
 architecture STRUCTURE of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_dmg is
@@ -12026,8 +12016,6 @@ entity design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_top is
     m_axi_lite_ch1_rdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axi_lite_ch1_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_top : entity is "axi_traffic_gen_v3_0_7_systeminit_top";
 end design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_top;
 
 architecture STRUCTURE of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_systeminit_top is
@@ -12771,8 +12759,6 @@ entity design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_top is
   attribute C_ZERO_INVALID of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_top : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_top : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_top : entity is "axi_traffic_gen_v3_0_7_top";
 end design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_top;
 
 architecture STRUCTURE of design_1_axi_traffic_gen_1_0_axi_traffic_gen_v3_0_7_top is

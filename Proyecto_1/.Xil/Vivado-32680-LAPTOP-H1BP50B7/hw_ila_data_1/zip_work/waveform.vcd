@@ -1,0 +1,37 @@
+$date
+        2024-May-11 20:25:06
+$end
+$version
+        Vivado v2020.1 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 8 " Proyecto_1_sep_i/RAM_test_0_seno [7:0] $end
+$var reg 8 * Proyecto_1_sep_i/comp_cuadrada_0_cuadrada [7:0] $end
+$var reg 8 2 Proyecto_1_sep_i/Triangular_0_triangulada [7:0] $end
+$var reg 8 : Proyecto_1_sep_i/Dientes_de_sierra_0_sierra [7:0] $end
+$var reg 8 B Proyecto_1_sep_i/Sel_funcion_0_funcion_a [7:0] $end
+$var reg 8 J Proyecto_1_sep_i/Sel_funcion_0_funcion_b [7:0] $end
+$var reg 16 R Proyecto_1_sep_i/Math_0_f_out [15:0] $end
+$var reg 1 b _TRIGGER $end
+$var reg 1 c _WINDOW $end
+$var reg 1 d _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+b0 *
+b0 2
+b0 :
+b0 B
+b0 J
+b0 R
+0b
+1c
+0d
+$end
+#512
+1b

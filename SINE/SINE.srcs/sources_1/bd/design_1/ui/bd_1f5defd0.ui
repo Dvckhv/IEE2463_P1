@@ -1,28 +1,29 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.13005",
-   "Default View_TopLeft":"-81,-204",
+   "Default View_TopLeft":"-81,-106",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port clock -pg 1 -lvl 0 -x 0 -y 210 -defaultsOSRD
-preplace port reset -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
-preplace inst axi_traffic_gen_1 -pg 1 -lvl 3 -x 690 -y 200 -defaultsOSRD
-preplace inst ila_0 -pg 1 -lvl 5 -x 1170 -y 130 -defaultsOSRD
-preplace inst clk_wiz -pg 1 -lvl 1 -x 110 -y 200 -defaultsOSRD
-preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 380 -y 170 -defaultsOSRD
-preplace inst Dientes_de_sierra_0 -pg 1 -lvl 3 -x 690 -y 60 -defaultsOSRD
-preplace inst SINE_RAM_0 -pg 1 -lvl 4 -x 960 -y 210 -defaultsOSRD
-preplace netloc clk_wiz_clk_out1 1 1 4 200 70 550 120 840 120 NJ
-preplace netloc clk_wiz_locked 1 1 1 N 210
-preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 2 2 550 280 830J
-preplace netloc sys_clock_1 1 0 1 NJ 210
-preplace netloc reset_rtl_1 1 0 2 20 270 210
-preplace netloc SINE_RAM_0_seno 1 4 1 1080 140n
-preplace netloc Dientes_de_sierra_0_sierra 1 3 1 830 60n
-preplace netloc axi_traffic_gen_1_M_AXI_LITE_CH1 1 3 1 N 180
-levelinfo -pg 1 0 110 380 690 960 1170 1270
-pagesize -pg 1 -db -bbox -sgen -90 0 1270 300
+preplace port clock -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
+preplace inst axi_traffic_gen_1 -pg 1 -lvl 3 -x 680 -y 340 -defaultsOSRD -pinY M_AXI_LITE_CH1 0R -pinY s_axi_aclk 0L -pinY s_axi_aresetn 40L -pinY done 20R -pinBusY status 40R
+preplace inst ila_0 -pg 1 -lvl 4 -x 960 -y 60 -defaultsOSRD -pinY SLOT_0_AXI 0L -pinY clk 20L
+preplace inst clk_wiz -pg 1 -lvl 1 -x 110 -y 340 -defaultsOSRD -pinY reset 0L -pinY clk_in1 20L -pinY clk_out1 0R -pinY locked 20R
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 370 -y 280 -swap {1 0 3 4 2 5 6 7 8 9} -defaultsOSRD -pinY slowest_sync_clk 20L -pinY ext_reset_in 0L -pinY aux_reset_in 100L -pinY mb_debug_sys_rst 120L -pinY dcm_locked 80L -pinY mb_reset 0R -pinBusY bus_struct_reset 20R -pinBusY peripheral_reset 40R -pinBusY interconnect_aresetn 60R -pinBusY peripheral_aresetn 100R
+preplace inst Dientes_de_sierra_0 -pg 1 -lvl 3 -x 680 -y 220 -defaultsOSRD -pinY clk_div 0L -pinBusY sierra 0R
+preplace inst SINE_RAM_0 -pg 1 -lvl 4 -x 960 -y 200 -defaultsOSRD -pinY S00_AXI 0L -pinBusY counter 20L -pinBusY seno 0R -pinY s00_axi_aclk 80L -pinY s00_axi_aresetn 240L
+preplace inst ila_1 -pg 1 -lvl 5 -x 1170 -y 140 -defaultsOSRD -pinY clk 0L -pinBusY probe0 60L
+preplace netloc clk_wiz_clk_out1 1 1 4 200 220 540 280 840 140 NJ
+preplace netloc clk_wiz_locked 1 1 1 N 360
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 2 2 540 440 NJ
+preplace netloc sys_clock_1 1 0 1 NJ 360
+preplace netloc reset_rtl_1 1 0 2 20 280 NJ
+preplace netloc Dientes_de_sierra_0_sierra 1 3 1 NJ 220
+preplace netloc SINE_RAM_0_seno 1 4 1 N 200
+preplace netloc axi_traffic_gen_1_M_AXI_LITE_CH1 1 3 1 820 60n
+levelinfo -pg 1 0 110 370 680 960 1170 1260
+pagesize -pg 1 -db -bbox -sgen -90 0 1260 500
 "
 }
 {

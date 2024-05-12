@@ -1,0 +1,258 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat May 11 20:31:58 2024
+| Host         : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_RAM_FREC_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_RAM_FREC_0_0 (xilinx.com:user:RAM_FREC:3.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_RAM_FREC_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'mem_select'
+
+
+3. Customization warnings
+-------------------------
+
+Parameter 'USER_NUM_MEM' is no longer present on the upgraded IP 'design_1_RAM_FREC_0_0', and cannot be set to '2'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:user:RAM_FREC:3.0 -user_name design_1_RAM_FREC_0_0
+set_property -dict "\
+  CONFIG.C_S00_AXI_ADDR_WIDTH {6} \
+  CONFIG.C_S00_AXI_ARUSER_WIDTH {8} \
+  CONFIG.C_S00_AXI_AWUSER_WIDTH {8} \
+  CONFIG.C_S00_AXI_BASEADDR {0xFFFFFFFF} \
+  CONFIG.C_S00_AXI_BUSER_WIDTH {0} \
+  CONFIG.C_S00_AXI_DATA_WIDTH {32} \
+  CONFIG.C_S00_AXI_HIGHADDR {0x00000000} \
+  CONFIG.C_S00_AXI_ID_WIDTH {0} \
+  CONFIG.C_S00_AXI_RUSER_WIDTH {0} \
+  CONFIG.C_S00_AXI_WUSER_WIDTH {0} \
+  CONFIG.Component_Name {design_1_RAM_FREC_0_0} \
+  CONFIG.LENGTH_MAX {4} \
+  CONFIG.S00_AXI.ADDR_WIDTH {6} \
+  CONFIG.S00_AXI.ARUSER_WIDTH {8} \
+  CONFIG.S00_AXI.AWUSER_WIDTH {8} \
+  CONFIG.S00_AXI.BUSER_WIDTH {0} \
+  CONFIG.S00_AXI.CLK_DOMAIN {/clk_wiz_clk_out1} \
+  CONFIG.S00_AXI.DATA_WIDTH {32} \
+  CONFIG.S00_AXI.FREQ_HZ {100000000} \
+  CONFIG.S00_AXI.HAS_BRESP {1} \
+  CONFIG.S00_AXI.HAS_BURST {1} \
+  CONFIG.S00_AXI.HAS_CACHE {1} \
+  CONFIG.S00_AXI.HAS_LOCK {1} \
+  CONFIG.S00_AXI.HAS_PROT {1} \
+  CONFIG.S00_AXI.HAS_QOS {1} \
+  CONFIG.S00_AXI.HAS_REGION {1} \
+  CONFIG.S00_AXI.HAS_RRESP {1} \
+  CONFIG.S00_AXI.HAS_WSTRB {1} \
+  CONFIG.S00_AXI.ID_WIDTH {0} \
+  CONFIG.S00_AXI.INSERT_VIP {0} \
+  CONFIG.S00_AXI.MAX_BURST_LENGTH {256} \
+  CONFIG.S00_AXI.NUM_READ_OUTSTANDING {7} \
+  CONFIG.S00_AXI.NUM_READ_THREADS {1} \
+  CONFIG.S00_AXI.NUM_WRITE_OUTSTANDING {7} \
+  CONFIG.S00_AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.S00_AXI.PHASE {0.0} \
+  CONFIG.S00_AXI.PROTOCOL {AXI4} \
+  CONFIG.S00_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S00_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S00_AXI.RUSER_WIDTH {0} \
+  CONFIG.S00_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S00_AXI.WIZ_DATA_WIDTH {32} \
+  CONFIG.S00_AXI.WIZ_MEMORY_SIZE {64} \
+  CONFIG.S00_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S00_AXI.WUSER_WIDTH {0} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_BUSIF {S00_AXI} \
+  CONFIG.S00_AXI_CLK.ASSOCIATED_RESET {s00_axi_aresetn} \
+  CONFIG.S00_AXI_CLK.CLK_DOMAIN {/clk_wiz_clk_out1} \
+  CONFIG.S00_AXI_CLK.FREQ_HZ {100000000} \
+  CONFIG.S00_AXI_CLK.FREQ_TOLERANCE_HZ {0} \
+  CONFIG.S00_AXI_CLK.INSERT_VIP {0} \
+  CONFIG.S00_AXI_CLK.PHASE {0.0} \
+  CONFIG.S00_AXI_RST.INSERT_VIP {0} \
+  CONFIG.S00_AXI_RST.POLARITY {ACTIVE_LOW} " [get_ips design_1_RAM_FREC_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May 10 15:30:19 2024
+| Host         : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_RAM_FREC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_RAM_FREC_0_0 from xilinx.com:user:RAM_FREC:2.0 (Rev. 3) to xilinx.com:user:RAM_FREC:3.0 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May 10 15:26:16 2024
+| Host         : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_RAM_FREC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_RAM_FREC_0_0 (xilinx.com:user:RAM_FREC:2.0 (Rev. 3)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May 10 12:55:08 2024
+| Host         : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_RAM_FREC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_RAM_FREC_0_0 (xilinx.com:user:RAM_FREC:2.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May 10 12:18:24 2024
+| Host         : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_RAM_FREC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_RAM_FREC_0_0 (xilinx.com:user:RAM_FREC:2.0) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May 10 12:12:34 2024
+| Host         : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_RAM_FREC_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_RAM_FREC_0_0 from xilinx.com:user:RAM_FREC:1.0 (Rev. 4) to xilinx.com:user:RAM_FREC:2.0 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_RAM_FREC_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'mem_select'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May 10 11:18:02 2024
+| Host         : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_RAM_FREC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_RAM_FREC_0_0 (xilinx.com:user:RAM_FREC:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri May 10 11:03:40 2024
+| Host         : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_RAM_FREC_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_RAM_FREC_0_0 (xilinx.com:user:RAM_FREC:1.0) from (Rev. 2) to (Rev. 3)
+

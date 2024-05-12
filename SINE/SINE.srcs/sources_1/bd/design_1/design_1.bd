@@ -15,7 +15,8 @@
       "clk_wiz": "",
       "rst_clk_wiz_100M": "",
       "Dientes_de_sierra_0": "",
-      "SINE_RAM_0": ""
+      "SINE_RAM_0": "",
+      "ila_1": ""
     },
     "ports": {
       "clock": {
@@ -109,20 +110,161 @@
         "vlnv": "xilinx.com:ip:ila:6.2",
         "xci_name": "design_1_ila_0_0",
         "parameters": {
-          "C_ENABLE_ILA_AXI_MON": {
+          "ALL_PROBE_SAME_MU_CNT": {
+            "value": "2"
+          },
+          "C_ADV_TRIGGER": {
             "value": "false"
           },
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "true"
+          },
+          "C_EN_STRG_QUAL": {
+            "value": "0"
+          },
           "C_MONITOR_TYPE": {
-            "value": "Native"
+            "value": "AXI"
           },
           "C_NUM_OF_PROBES": {
-            "value": "1"
+            "value": "19"
+          },
+          "C_PROBE0_MU_CNT": {
+            "value": "2"
           },
           "C_PROBE0_WIDTH": {
-            "value": "8"
+            "value": "1"
+          },
+          "C_PROBE10_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE11_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE12_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE13_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE14_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE15_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE16_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE17_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE18_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE19_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE1_MU_CNT": {
+            "value": "2"
           },
           "C_PROBE1_WIDTH": {
             "value": "1"
+          },
+          "C_PROBE20_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE21_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE22_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE23_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE24_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE25_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE26_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE27_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE28_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE29_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE2_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE30_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE31_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE32_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE33_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE34_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE35_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE36_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE37_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE38_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE39_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE3_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE40_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE41_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE42_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE43_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE4_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE5_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE6_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE7_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE8_MU_CNT": {
+            "value": "2"
+          },
+          "C_PROBE9_MU_CNT": {
+            "value": "2"
           }
         }
       },
@@ -149,13 +291,32 @@
       "SINE_RAM_0": {
         "vlnv": "xilinx.com:user:SINE_RAM:3",
         "xci_name": "design_1_SINE_RAM_0_1"
+      },
+      "ila_1": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "design_1_ila_1_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "1"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "8"
+          }
+        }
       }
     },
     "interface_nets": {
       "axi_traffic_gen_1_M_AXI_LITE_CH1": {
         "interface_ports": [
           "axi_traffic_gen_1/M_AXI_LITE_CH1",
-          "SINE_RAM_0/S00_AXI"
+          "SINE_RAM_0/S00_AXI",
+          "ila_0/SLOT_0_AXI"
         ]
       }
     },
@@ -167,7 +328,8 @@
           "axi_traffic_gen_1/s_axi_aclk",
           "rst_clk_wiz_100M/slowest_sync_clk",
           "Dientes_de_sierra_0/clk_div",
-          "SINE_RAM_0/s00_axi_aclk"
+          "SINE_RAM_0/s00_axi_aclk",
+          "ila_1/clk"
         ]
       },
       "clk_wiz_locked": {
@@ -196,16 +358,16 @@
           "rst_clk_wiz_100M/ext_reset_in"
         ]
       },
-      "SINE_RAM_0_seno": {
-        "ports": [
-          "SINE_RAM_0/seno",
-          "ila_0/probe0"
-        ]
-      },
       "Dientes_de_sierra_0_sierra": {
         "ports": [
           "Dientes_de_sierra_0/sierra",
           "SINE_RAM_0/counter"
+        ]
+      },
+      "SINE_RAM_0_seno": {
+        "ports": [
+          "SINE_RAM_0/seno",
+          "ila_1/probe0"
         ]
       }
     },

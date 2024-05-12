@@ -196,23 +196,80 @@ proc create_root_design { parentCell } {
   # Create instance: ila_0, and set properties
   set ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0 ]
   set_property -dict [ list \
+   CONFIG.ALL_PROBE_SAME_MU_CNT {2} \
+   CONFIG.C_ADV_TRIGGER {false} \
+   CONFIG.C_ENABLE_ILA_AXI_MON {true} \
+   CONFIG.C_EN_STRG_QUAL {0} \
+   CONFIG.C_MONITOR_TYPE {AXI} \
+   CONFIG.C_NUM_OF_PROBES {19} \
+   CONFIG.C_PROBE0_MU_CNT {2} \
+   CONFIG.C_PROBE0_WIDTH {1} \
+   CONFIG.C_PROBE10_MU_CNT {2} \
+   CONFIG.C_PROBE11_MU_CNT {2} \
+   CONFIG.C_PROBE12_MU_CNT {2} \
+   CONFIG.C_PROBE13_MU_CNT {2} \
+   CONFIG.C_PROBE14_MU_CNT {2} \
+   CONFIG.C_PROBE15_MU_CNT {2} \
+   CONFIG.C_PROBE16_MU_CNT {2} \
+   CONFIG.C_PROBE17_MU_CNT {2} \
+   CONFIG.C_PROBE18_MU_CNT {2} \
+   CONFIG.C_PROBE19_MU_CNT {2} \
+   CONFIG.C_PROBE1_MU_CNT {2} \
+   CONFIG.C_PROBE1_WIDTH {1} \
+   CONFIG.C_PROBE20_MU_CNT {2} \
+   CONFIG.C_PROBE21_MU_CNT {2} \
+   CONFIG.C_PROBE22_MU_CNT {2} \
+   CONFIG.C_PROBE23_MU_CNT {2} \
+   CONFIG.C_PROBE24_MU_CNT {2} \
+   CONFIG.C_PROBE25_MU_CNT {2} \
+   CONFIG.C_PROBE26_MU_CNT {2} \
+   CONFIG.C_PROBE27_MU_CNT {2} \
+   CONFIG.C_PROBE28_MU_CNT {2} \
+   CONFIG.C_PROBE29_MU_CNT {2} \
+   CONFIG.C_PROBE2_MU_CNT {2} \
+   CONFIG.C_PROBE30_MU_CNT {2} \
+   CONFIG.C_PROBE31_MU_CNT {2} \
+   CONFIG.C_PROBE32_MU_CNT {2} \
+   CONFIG.C_PROBE33_MU_CNT {2} \
+   CONFIG.C_PROBE34_MU_CNT {2} \
+   CONFIG.C_PROBE35_MU_CNT {2} \
+   CONFIG.C_PROBE36_MU_CNT {2} \
+   CONFIG.C_PROBE37_MU_CNT {2} \
+   CONFIG.C_PROBE38_MU_CNT {2} \
+   CONFIG.C_PROBE39_MU_CNT {2} \
+   CONFIG.C_PROBE3_MU_CNT {2} \
+   CONFIG.C_PROBE40_MU_CNT {2} \
+   CONFIG.C_PROBE41_MU_CNT {2} \
+   CONFIG.C_PROBE42_MU_CNT {2} \
+   CONFIG.C_PROBE43_MU_CNT {2} \
+   CONFIG.C_PROBE4_MU_CNT {2} \
+   CONFIG.C_PROBE5_MU_CNT {2} \
+   CONFIG.C_PROBE6_MU_CNT {2} \
+   CONFIG.C_PROBE7_MU_CNT {2} \
+   CONFIG.C_PROBE8_MU_CNT {2} \
+   CONFIG.C_PROBE9_MU_CNT {2} \
+ ] $ila_0
+
+  # Create instance: ila_1, and set properties
+  set ila_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_1 ]
+  set_property -dict [ list \
    CONFIG.C_ENABLE_ILA_AXI_MON {false} \
    CONFIG.C_MONITOR_TYPE {Native} \
    CONFIG.C_NUM_OF_PROBES {1} \
    CONFIG.C_PROBE0_WIDTH {8} \
-   CONFIG.C_PROBE1_WIDTH {1} \
- ] $ila_0
+ ] $ila_1
 
   # Create instance: rst_clk_wiz_100M, and set properties
   set rst_clk_wiz_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_clk_wiz_100M ]
 
   # Create interface connections
   connect_bd_intf_net -intf_net axi_traffic_gen_1_M_AXI_LITE_CH1 [get_bd_intf_pins SINE_RAM_0/S00_AXI] [get_bd_intf_pins axi_traffic_gen_1/M_AXI_LITE_CH1]
+connect_bd_intf_net -intf_net [get_bd_intf_nets axi_traffic_gen_1_M_AXI_LITE_CH1] [get_bd_intf_pins axi_traffic_gen_1/M_AXI_LITE_CH1] [get_bd_intf_pins ila_0/SLOT_0_AXI]
 
   # Create port connections
   connect_bd_net -net Dientes_de_sierra_0_sierra [get_bd_pins Dientes_de_sierra_0/sierra] [get_bd_pins SINE_RAM_0/counter]
-  connect_bd_net -net SINE_RAM_0_seno [get_bd_pins SINE_RAM_0/seno] [get_bd_pins ila_0/probe0]
-  connect_bd_net -net clk_wiz_clk_out1 [get_bd_pins Dientes_de_sierra_0/clk_div] [get_bd_pins SINE_RAM_0/s00_axi_aclk] [get_bd_pins axi_traffic_gen_1/s_axi_aclk] [get_bd_pins clk_wiz/clk_out1] [get_bd_pins ila_0/clk] [get_bd_pins rst_clk_wiz_100M/slowest_sync_clk]
+  connect_bd_net -net SINE_RAM_0_seno [get_bd_pins SINE_RAM_0/seno] [get_bd_pins ila_1/probe0]
+  connect_bd_net -net clk_wiz_clk_out1 [get_bd_pins Dientes_de_sierra_0/clk_div] [get_bd_pins SINE_RAM_0/s00_axi_aclk] [get_bd_pins axi_traffic_gen_1/s_axi_aclk] [get_bd_pins clk_wiz/clk_out1] [get_bd_pins ila_0/clk] [get_bd_pins ila_1/clk] [get_bd_pins rst_clk_wiz_100M/slowest_sync_clk]
   connect_bd_net -net clk_wiz_locked [get_bd_pins clk_wiz/locked] [get_bd_pins rst_clk_wiz_100M/dcm_locked]
   connect_bd_net -net reset_rtl_1 [get_bd_ports reset] [get_bd_pins clk_wiz/reset] [get_bd_pins rst_clk_wiz_100M/ext_reset_in]
   connect_bd_net -net rst_clk_wiz_100M_peripheral_aresetn [get_bd_pins SINE_RAM_0/s00_axi_aresetn] [get_bd_pins axi_traffic_gen_1/s_axi_aresetn] [get_bd_pins rst_clk_wiz_100M/peripheral_aresetn]

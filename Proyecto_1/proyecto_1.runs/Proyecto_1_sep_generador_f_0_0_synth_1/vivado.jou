@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 11 18:42:29 2024
+# Process ID: 34980
+# Current directory: C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/Proyecto_1_sep_generador_f_0_0_synth_1
+# Command line: vivado.exe -log Proyecto_1_sep_generador_f_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Proyecto_1_sep_generador_f_0_0.tcl
+# Log file: C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/Proyecto_1_sep_generador_f_0_0_synth_1/Proyecto_1_sep_generador_f_0_0.vds
+# Journal file: C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/Proyecto_1_sep_generador_f_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Proyecto_1_sep_generador_f_0_0.tcl -notrace

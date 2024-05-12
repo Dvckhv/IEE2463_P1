@@ -70,9 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -112,6 +110,10 @@ set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/
 set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_100M_0/design_1_rst_clk_wiz_100M_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/ip/design_1_ila_1_0/design_1_ila_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/SINE/SINE.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }

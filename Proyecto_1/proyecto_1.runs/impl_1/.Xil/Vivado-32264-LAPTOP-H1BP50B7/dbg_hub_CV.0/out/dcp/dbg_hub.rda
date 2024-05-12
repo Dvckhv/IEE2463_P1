@@ -1,0 +1,124 @@
+Data_For_RDAFlowver5.0
+	top levelÊÉ
+dbg_hubòM
+synthFileNamesJ
+10DC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhdG
+11AC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/BRAM_TDP_MACRO.vhdK
+12EC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/COUNTER_LOAD_MACRO.vhdI
+13CC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/COUNTER_TC_MACRO.vhdI
+14CC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/EQ_COMPARE_MACRO.vhdF
+20@C:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/ADDSUB_MACRO.vM
+15GC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhdH
+21BC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/BRAM_SDP_MACRO.vH
+16BC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhdK
+22EC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.vC
+17=C:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/MACC_MACRO.vhdC
+18=C:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/MULT_MACRO.vhdH
+23BC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/BRAM_TDP_MACRO.vG
+19AC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/ADDMACC_MACRO.vL
+24FC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/COUNTER_LOAD_MACRO.vJ
+25DC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/COUNTER_TC_MACRO.vD
+30>C:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/MULT_MACRO.v
+NumFileNames71J
+26DC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/EQ_COMPARE_MACRO.vJ
+31DC:/Xilinx/Vivado/2020.1/data/vhdl/src/unisims/retarget/MULT18X18.vhd=
+18C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_VCOMP.vhdN
+27HC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/FIFO_DUALCLOCK_MACRO.vK
+32EC:/Xilinx/Vivado/2020.1/data/vhdl/src/unisims/retarget/MULT18X18S.vhd<
+27C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_VPKG.vhdI
+28CC:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/FIFO_SYNC_MACRO.v@
+33:C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:
+35C:/Xilinx/Vivado/2020.1/scripts/rt/data/unisim_comp.vD
+29>C:/Xilinx/Vivado/2020.1/data/verilog/src/unimacro/MACC_MACRO.vF
+34@C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv=
+48C:/Xilinx/Vivado/2020.1/scripts/rt/data/internal_cells.v∆
+35øc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/xsdbm_v3_0_vl_rfs.v’
+40Œc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bsid_ports.vh3
+5.C:/Xilinx/Vivado/2020.1/scripts/rt/data/BUFT.vÕ
+36∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_in.vhÕ
+41∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs.vhF
+6AC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/unimacro_VCOMP.vhdŒ
+37«c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_i2x.vh÷
+42œc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_core_ext.vhE
+7@C:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/ADDMACC_MACRO.vhdŒ
+38«c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_icn.vh“
+43Àc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_core.vhD
+8?C:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/ADDSUB_MACRO.vhd”
+39Ãc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_ports.vh—
+44 c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_ext.vh’
+50Œc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_id_vec_map.vhF
+9AC:/Xilinx/Vivado/2020.1/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhdŸ
+45“c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bsid_vec_ports.vh∆
+51øc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/ltlib_v1_0_vl_rfs.v—
+46 c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_vec.vhŒ
+52«c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/ltlib_v1_0_0_ver.vh÷
+47œc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_bs_core_vec.vh—
+53 c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/ltlib_v1_0_0_lib_fn.vh’
+48Œc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_sl_prt_map.vhæ
+54∑c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/synth/dbg_hub.v—
+49 c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/verilog/xsdbm_v3_0_0_id_map.vh–
+60…c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/numeric_std.vhd—
+55 c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhdÀ
+61ƒc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/textio.vhd’
+56Œc:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.srcs/sources_1/ip/dbg_hub/hdl/fifo_generator_v13_1_vhsyn_rfs.vhdÕ
+62∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/timing_p.vhd7
+571C:/Xilinx/Vivado/2020.1/data/ip/xpm/xpm_VCOMP.vhdÕ
+63∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/timing_b.vhdÕ
+58∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/std_1164.vhdÕ
+64∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/prmtvs_p.vhdÕ
+59∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/standard.vhdÕ
+70∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/syn_attr.vhdÕ
+65∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/prmtvs_b.vhdÕ
+66∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/syn_arit.vhdÕ
+67∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/syn_unsi.vhdÕ
+68∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/syn_sign.vhdÕ
+69∆c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_1/proyecto_1.runs/impl_1/.Xil/Vivado-32264-LAPTOP-H1BP50B7/dc_drv.0/dc/prj_ip.runs/dbg_hub_synth_1/vhdl_packages/1993/src/syn_misc.vhd
+
+synthStatsß2
+ElaboratedNamesForRQSç2
+DSP_RAMQ
+11280385E { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_STAT/iSTAT_CNT0_i}  } i
+50913281] { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_MSTR2SL_PORT_IFACE/drdy_or_i}  } n
+6819841c { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/shift_bit_count0_i}  } õ
+33366019é { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/plusOp_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/plusOp_i}  } «
+9691137ª { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_ICON_INTERFACE_SEL_MASK/SL_DEN_MASK_O0_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_ICON_INTERFACE_SEL_MASK/SL_DEN_MASK_O0_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_ICON_INTERFACE_SEL_MASK/SL_DEN_MASK_O0_i__1} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_ICON_INTERFACE_SEL_MASK/SL_DEN_MASK_O0_i__2}  } n
+47644673b { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BURST_WD_LEN_CONTROLLER/wdc_eq_zero_i}  } q
+47611905e { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BURST_WD_LEN_CONTROLLER/wdc_eq_zero_i__2}  } n
+7303169c { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/shift_bit_count0_i}  } P
+11571201D { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_SYNC/iGOT_SYNC_i}  } i
+6840321^ { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/cnt_is_zero_i}  } i
+50221057] { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/U_TIMER/timeout_i}  } h
+50216961\ { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/U_TIMER/count0_i}  } ø
+50810881≤ { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_MSTR2SL_PORT_IFACE/fn_mult_drdy_return1_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_MSTR2SL_PORT_IFACE/fn_mult_drdy_return3_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_MSTR2SL_PORT_IFACE/fn_mult_drdy_return5_i}  } £
+21991427ñ { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg}  } P
+3760129E { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/CORE_ID_SEL_i}  } ﬂ
+49123329“ { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/active_sl_den_mask_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/auto_sl_drdy_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/auto_sl_drdy_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/clr_abort_rd_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/clr_abort_rd_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/clr_rd_req_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/clr_rd_req_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/dec_wdc_r_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/dec_wdc_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_idle_mode_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_idle_mode_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_normal_mode_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_normal_mode_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_read_mode_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_read_mode_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_write_mode_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/in_write_mode_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/inc_addr_r_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/inc_addr_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_err_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_rd_flush_r_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_rd_flush_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_wr_pop_r_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/ma_wr_pop_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_berr_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_den_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_dwe_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_rdmux_sel_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/sl_rst_r_i__0} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/timer_rst_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BUS_CONTROLLER/timer_rst_i__0}  } W
+3321857L { {inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/shiftreg0_i}  } c
+47276033W { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_ADDRESS_CONTROLLER/addr0_i}  } õ
+34299907é { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/plusOp_i} {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/plusOp_i}  } P
+3878913E { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.U_ICON/U_CMD/COMMAND_SEL_i}  } w
+10227713k { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_STATIC_STATUS/stat_addr_bit_cnt0_i}  } l
+47640577` { {inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_XSDB_BURST_WD_LEN_CONTROLLER/burst_wd0_i}  } V
+3080193K { {inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/counter0_i}  } á
+synth_design
+isIncremental0
+Runtime0
+Threads used2V
+argsN-verilog_define default::[not_specified] -top  dbg_hub -part  xc7z010clg400-1 
+resynthPerc0.00
+Cputime0
+blackBoxPerc	-nan(ind)
+	directive ú
+synth_design_metrics$
+mismatchedAddSubOperatorWidths-1
+lowMaxFanout-1
+NumUnregisteredPorts0
+caseNotFullNoDefault1
+	smallSrls-1
+srlsWithResetLogic-1
+shallowRAMWithAttribute-1
+hierMFO0
+bigRAMs-1
+NetsWithMixedFanouts-1
+DSPsWithKeep0
+RQS_Results

@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Wed May  8 15:58:26 2024
+--Date        : Sat May 11 22:44:47 2024
 --Host        : LAPTOP-H1BP50B7 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -17,7 +17,7 @@ entity design_1 is
     reset : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=3,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_board_cnt=3,da_clkrst_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -52,7 +52,25 @@ architecture STRUCTURE of design_1 is
   component design_1_ila_0_0 is
   port (
     clk : in STD_LOGIC;
-    probe0 : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe5 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe9 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe10 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe12 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe13 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe14 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe16 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe17 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe18 : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   end component design_1_ila_0_0;
   component design_1_clk_wiz_0 is
@@ -110,6 +128,12 @@ architecture STRUCTURE of design_1 is
     s00_axi_rready : in STD_LOGIC
   );
   end component design_1_SINE_RAM_0_1;
+  component design_1_ila_1_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 7 downto 0 )
+  );
+  end component design_1_ila_1_0;
   signal Dientes_de_sierra_0_sierra : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal SINE_RAM_0_seno : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi_traffic_gen_1_M_AXI_LITE_CH1_ARADDR : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -214,6 +238,29 @@ clk_wiz: component design_1_clk_wiz_0
       reset => reset_rtl_1
     );
 ila_0: component design_1_ila_0_0
+     port map (
+      clk => clk_wiz_clk_out1,
+      probe0(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_WREADY,
+      probe1(31 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_AWADDR(31 downto 0),
+      probe10(31 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_RDATA(31 downto 0),
+      probe11(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_AWVALID,
+      probe12(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_AWREADY,
+      probe13(1 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_RRESP(1 downto 0),
+      probe14(31 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_WDATA(31 downto 0),
+      probe15(3 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_WSTRB(3 downto 0),
+      probe16(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_RVALID,
+      probe17(2 downto 0) => B"000",
+      probe18(2 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_AWPROT(2 downto 0),
+      probe2(1 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_BRESP(1 downto 0),
+      probe3(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_BVALID,
+      probe4(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_BREADY,
+      probe5(31 downto 0) => axi_traffic_gen_1_M_AXI_LITE_CH1_ARADDR(31 downto 0),
+      probe6(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_RREADY,
+      probe7(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_WVALID,
+      probe8(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_ARVALID,
+      probe9(0) => axi_traffic_gen_1_M_AXI_LITE_CH1_ARREADY
+    );
+ila_1: component design_1_ila_1_0
      port map (
       clk => clk_wiz_clk_out1,
       probe0(7 downto 0) => SINE_RAM_0_seno(7 downto 0)
