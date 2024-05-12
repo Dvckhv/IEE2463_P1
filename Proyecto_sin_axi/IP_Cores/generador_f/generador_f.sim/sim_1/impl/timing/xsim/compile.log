@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/IP_Cores/generador_f/generador_f.sim/sim_1/impl/timing/xsim/generador_f_TB_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module c_Comp_cuadrada
+INFO: [VRFC 10-311] analyzing module c_Dientes_de_sierra
+INFO: [VRFC 10-311] analyzing module c_Sinusoide
+INFO: [VRFC 10-311] analyzing module c_Triangular
+INFO: [VRFC 10-311] analyzing module generador_f
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/IP_Cores/generador_f/generador_f.srcs/sim_1/new/generador_f_TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'generador_f_TB'

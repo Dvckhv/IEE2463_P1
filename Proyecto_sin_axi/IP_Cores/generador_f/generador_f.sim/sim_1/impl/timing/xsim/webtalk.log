@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat May 11 21:25:03 2024
+# Process ID: 22284
+# Current directory: C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/IP_Cores/generador_f/generador_f.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/IP_Cores/generador_f/generador_f.sim/sim_1/impl/timing/xsim/xsim.dir/generador_f_TB_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/IP_Cores/generador_f/generador_f.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/IP_Cores/generador_f/generador_f.sim/sim_1/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/vicen/OneDrive/Escritorio/Septimo -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/vicen/OneDrive/Escritorio/Septimo" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sat May 11 21:25:03 2024...

@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../generador_f.srcs/sources_1/new/c_Comp_cuadrada.vhd" \
+"../../../../generador_f.srcs/sources_1/new/c_Dientes_de_sierra.vhd" \
+"../../../../generador_f.srcs/sources_1/new/c_Sinusoide.vhd" \
+"../../../../generador_f.srcs/sources_1/new/c_Triangular.vhd" \
+"../../../../generador_f.srcs/sources_1/new/generador_f.vhd" \
+"../../../../generador_f.srcs/sim_1/new/generador_f_TB.vhd" \
+
+# Do not sort compile order
+nosort
