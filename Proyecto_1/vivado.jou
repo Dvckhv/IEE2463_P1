@@ -17,3 +17,15 @@ delete_bd_objs [get_bd_nets clk_1]
 apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins clk_wiz/clk_in1]
 startgroup
 apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {Auto} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins ila_0/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {Auto} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins ila_1/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {Auto} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins ila_2/clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {Auto} Freq {100} Ref_Clk0 {None} Ref_Clk1 {None} Ref_Clk2 {None}}  [get_bd_pins vio_0/clk]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+save_bd_design
+reset_run Proyecto_1_sep_clk_wiz_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1

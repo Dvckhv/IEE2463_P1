@@ -1,0 +1,138 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 3228
+License: Customer
+
+Current time: 	Sat May 11 23:51:34 CLT 2024
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1600
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Pato
+User home directory: C:/Users/Pato
+User working directory: C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Pato/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Pato/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Pato/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1/vivado.log
+Vivado journal file location: 	C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1/vivado.jou
+Engine tmp dir: 	C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1/.Xil/Vivado-3228-LAPTOP-H1BP50B7
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,031 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1163 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Pato\Desktop\Universida\2024-1\SEP\IEE2463_P1\Proyecto_sin_axi\proyecto_1\proyecto_1.xpr. Version: Vivado v2020.1 
+// bz (cs):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1/proyecto_1.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,031 MB. GUI used memory: 65 MB. Current time: 5/11/24, 11:51:35 PM CLT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+86275kb) [00:00:24]
+// [Engine Memory]: 1,031 MB (+929475kb) [00:00:24]
+// [GUI Memory]: 93 MB (+3924kb) [00:00:24]
+// [GUI Memory]: 102 MB (+4479kb) [00:00:26]
+// [GUI Memory]: 107 MB (+830kb) [00:00:26]
+// [GUI Memory]: 124 MB (+11639kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  5304 ms.
+// Tcl Message: open_project C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1/proyecto_1.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1' INFO: [Project 1-313] Project file moved from 'C:/Users/vicen/OneDrive/Escritorio/Septimo Semestre/SEP/Proyecto1/proyecto_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/IP_Cores'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1519 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1048.277 ; gain = 0.000 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 75 MB. Current time: 5/11/24, 11:51:51 PM CLT
+// Project name: proyecto_1; location: C:/Users/Pato/Desktop/Universida/2024-1/SEP/IEE2463_P1/Proyecto_sin_axi/proyecto_1; part: xc7z010clg400-1
+// [Engine Memory]: 1,092 MB (+9557kb) [00:00:31]
+dismissDialog("Open Project"); // bz (cs)
+// a (cs): Critical Messages: addNotify
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 132 MB (+2189kb) [00:00:39]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 143 MB (+3897kb) [00:04:53]
